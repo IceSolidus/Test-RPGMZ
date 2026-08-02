@@ -149,6 +149,8 @@
  * @type select
  * @option Control（Controls）
  * @value Controls
+ * @option Custom Scene（CustomScene）
+ * @value CustomScene
  * @default Controls
  *
  * @help
