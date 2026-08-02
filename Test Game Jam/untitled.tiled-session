@@ -1,0 +1,40 @@
+{
+    "activeFile": "data/Tiled/Asset/!$Hero1.tsx",
+    "expandedProjectPaths": [
+        ".",
+        "data/Tiled",
+        "data",
+        "data/Tiled/Asset"
+    ],
+    "fileStates": {
+        "data/Tiled/Asset/!$Hero1.tsx": {
+            "scaleInDock": 1,
+            "scaleInEditor": 2
+        },
+        "data/Tiled/Asset/tmw_Dungeon_A1.tsx": {
+            "scaleInDock": 1,
+            "scaleInEditor": 2
+        }
+    },
+    "frame.defaultDuration": 140,
+    "last.imagePath": "C:/Users/IceSolid/Documents/RMMZ/Project2/img/characters",
+    "openFiles": [
+        "data/Tiled/Asset/tmw_Dungeon_A1.tsx",
+        "data/Tiled/Asset/!$Hero1.tsx",
+        "data/Tiled/Asset/!$Hero1.tsx",
+        "data/Tiled/Asset/!$Hero1.tsx"
+    ],
+    "project": "untitled.tiled-project",
+    "property.type": "bool",
+    "recentFiles": [
+        "data/Tiled/Asset/tmw_Dungeon_A1.tsx",
+        "data/Tiled/Asset/!$Hero1.tsx"
+    ],
+    "tileset.lastUsedFormat": "tsx",
+    "tileset.margin": 0,
+    "tileset.spacing": 0,
+    "tileset.tileSize": {
+        "height": 24,
+        "width": 47
+    }
+}

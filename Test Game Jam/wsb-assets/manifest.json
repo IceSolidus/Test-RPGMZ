@@ -1,0 +1,25 @@
+{
+  "version": 1,
+  "assets": [
+    {
+      "id": "ua_ms7xv6db_1",
+      "name": "037",
+      "kind": "bg",
+      "width": 96,
+      "height": 96,
+      "layers": [
+        {
+          "name": "Calque 1",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "source-over",
+          "file": "ua_ms7xv6db_1/layers/0.png"
+        }
+      ],
+      "flattenedFile": "ua_ms7xv6db_1/flattened.png",
+      "createdAt": "2026-07-30T20:01:13.206Z",
+      "updatedAt": "2026-07-30T20:01:13.206Z",
+      "derivedFrom": "037"
+    }
+  ]
+}
