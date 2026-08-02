@@ -4,7 +4,7 @@
     "wsbVersion": "0.0.1",
     "projectName": "Untitled",
     "createdAt": "2026-07-30T19:35:12.598Z",
-    "updatedAt": "2026-08-02T15:06:55.534Z",
+    "updatedAt": "2026-08-02T16:41:57.150Z",
     "author": "",
     "mzProjectPath": "C:\\Users\\IceSolid\\Documents\\RMMZ\\Project2",
     "uiArea": {
@@ -76,7 +76,7 @@
         "x": 8,
         "y": 212,
         "width": 228,
-        "height": 304
+        "height": 335
       },
       "style": {
         "windowskin": "Window",
@@ -1493,6 +1493,13 @@
         "label": "Controls",
         "replaceMap": false
       }
+    },
+    "csc_msc0xu5l_4": {
+      "id": "csc_msc0xu5l_4",
+      "name": "Custom Scene",
+      "symbol": "CustomScene",
+      "windows": [],
+      "background": "snap"
     }
   },
   "mainMenuCommands": [
@@ -1670,8 +1677,8 @@
         "0": {
           "x": 0,
           "y": 72,
-          "width": 266,
-          "height": 248
+          "width": 240,
+          "height": 232
         },
         "1": {
           "x": 1024,
@@ -1682,12 +1689,12 @@
       }
     },
     "maxBattleMembers": 2,
+    "logHidden": true,
     "faceImage": {
       "mode": "face",
       "damageShakeSpeed": 2,
       "attackZoomSpeed": 2
     },
-    "logHidden": true,
     "skillNameWindow": {
       "rect": {
         "x": 228,
