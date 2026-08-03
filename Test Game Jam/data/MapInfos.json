@@ -2,8 +2,12 @@
 null,
 {"id":1,"expanded":true,"name":"MAP001","order":1,"parentId":0,"scrollX":1131,"scrollY":663},
 {"id":2,"expanded":true,"name":"Ville normale","order":2,"parentId":0,"scrollX":1131,"scrollY":840,"quick":false},
-{"id":3,"expanded":false,"name":"Ville normale","order":3,"parentId":0,"scrollX":1131,"scrollY":639,"quick":false},
+{"id":3,"expanded":false,"name":"Ville normale","order":3,"parentId":0,"scrollX":1131,"scrollY":663,"quick":false},
 {"id":4,"expanded":true,"name":"Plage","order":4,"parentId":0,"scrollX":1131,"scrollY":663,"quick":false},
-{"id":5,"expanded":true,"name":"Plage","order":4,"parentId":0,"scrollX":1139,"scrollY":846,"quick":false},
-{"id":6,"expanded":false,"name":"MAP005","order":5,"parentId":0,"scrollX":0,"scrollY":0,"quick":false}
+{"id":5,"expanded":false,"name":"Route plage","order":10,"parentId":0,"scrollX":1741,"scrollY":1737,"quick":false},
+{"id":6,"expanded":false,"name":"MAP005","order":5,"parentId":0,"scrollX":1131,"scrollY":663,"quick":false},
+{"id":7,"expanded":true,"name":"Ville","order":6,"parentId":0,"scrollX":2167,"scrollY":2511,"quick":false},
+{"id":8,"expanded":false,"name":"Village montagnard","order":7,"parentId":7,"scrollX":1131,"scrollY":655,"quick":false},
+{"id":9,"expanded":false,"name":"Ville forestière","order":8,"parentId":7,"scrollX":1139,"scrollY":743,"quick":false},
+{"id":10,"expanded":false,"name":"Village de pêcheurs","order":9,"parentId":7,"scrollX":1131,"scrollY":655,"quick":false}
 ]
