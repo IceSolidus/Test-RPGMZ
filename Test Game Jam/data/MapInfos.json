@@ -3,8 +3,6 @@ null,
 {"id":1,"expanded":true,"name":"MAP001","order":1,"parentId":0,"scrollX":1131,"scrollY":663},
 {"id":2,"expanded":true,"name":"Ville normale","order":2,"parentId":0,"scrollX":1131,"scrollY":840,"quick":false},
 {"id":3,"expanded":false,"name":"Ville normale","order":3,"parentId":0,"scrollX":1131,"scrollY":639,"quick":false},
-
 {"id":4,"expanded":true,"name":"Plage","order":4,"parentId":0,"scrollX":962.6666666666666,"scrollY":846,"quick":false},
-
-
+{"id":5,"expanded":false,"name":"MAP005","order":5,"parentId":0,"scrollX":0,"scrollY":0,"quick":false}
 ]
