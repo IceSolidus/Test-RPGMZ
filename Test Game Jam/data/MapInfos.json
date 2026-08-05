@@ -6,7 +6,7 @@ null,
 {"id":4,"expanded":true,"name":"Plage","order":2,"parentId":0,"scrollX":1129,"scrollY":657.5,"quick":false},
 {"id":5,"expanded":false,"name":"Route plage","order":14,"parentId":0,"scrollX":1743,"scrollY":1114.5,"quick":false},
 {"id":6,"expanded":false,"name":"MAP005","order":3,"parentId":0,"scrollX":1129,"scrollY":649.5,"quick":false},
-{"id":7,"expanded":false,"name":"Ville","order":4,"parentId":0,"scrollX":1442,"scrollY":657.5,"quick":false},
+{"id":7,"expanded":false,"name":"Ville","order":4,"parentId":0,"scrollX":1654,"scrollY":649.5,"quick":false},
 {"id":8,"expanded":false,"name":"Village montagnard","order":5,"parentId":7,"scrollX":1129,"scrollY":657.5,"quick":false},
 {"id":9,"expanded":false,"name":"Ville forestière","order":6,"parentId":7,"scrollX":1137,"scrollY":836.5,"quick":false},
 {"id":10,"expanded":false,"name":"Village de pêcheurs","order":7,"parentId":7,"scrollX":1129,"scrollY":657.5,"quick":false},
@@ -15,5 +15,5 @@ null,
 {"id":13,"expanded":true,"name":"Lac","order":15,"parentId":0,"scrollX":1129,"scrollY":649.5,"quick":false},
 {"id":14,"expanded":false,"name":"Chemin montagne","order":16,"parentId":0,"scrollX":1129,"scrollY":649.5,"quick":false},
 {"id":15,"expanded":false,"name":"Auberge","order":11,"parentId":2,"scrollX":1129,"scrollY":649.5,"quick":false},
-{"id":16,"expanded":false,"name":"Bar","order":12,"parentId":2,"scrollX":1129,"scrollY":649.5,"quick":false}
+{"id":16,"expanded":false,"name":"Bar","order":12,"parentId":2,"scrollX":840,"scrollY":626.5,"quick":false}
 ]
