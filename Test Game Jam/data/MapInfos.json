@@ -1,6 +1,7 @@
 [
 null,
 {"id":1,"expanded":true,"name":"MAP001","order":1,"parentId":0,"scrollX":1131,"scrollY":655},
+<<<<<<< HEAD
 {"id":2,"expanded":true,"name":"Ville 2","order":9,"parentId":0,"scrollX":1186,"scrollY":634.5,"quick":false},
 {"id":3,"expanded":false,"name":"Maison 2","order":17,"parentId":11,"scrollX":1131,"scrollY":655,"quick":false},
 {"id":4,"expanded":true,"name":"Plage","order":2,"parentId":0,"scrollX":2011,"scrollY":634.5,"quick":true},
@@ -10,6 +11,17 @@ null,
 {"id":8,"expanded":false,"name":"Village montagnard","order":5,"parentId":7,"scrollX":710,"scrollY":626.5,"quick":false},
 {"id":9,"expanded":false,"name":"Ville forestière","order":6,"parentId":7,"scrollX":962,"scrollY":837.5,"quick":false},
 {"id":10,"expanded":false,"name":"Village de pêcheurs","order":7,"parentId":7,"scrollX":710,"scrollY":657.5,"quick":false},
+=======
+{"id":2,"expanded":true,"name":"Ville 2","order":9,"parentId":0,"scrollX":1131,"scrollY":1434,"quick":false},
+{"id":3,"expanded":false,"name":"Maison 2","order":17,"parentId":11,"scrollX":1131,"scrollY":655,"quick":false},
+{"id":4,"expanded":true,"name":"Plage","order":2,"parentId":0,"scrollX":1749,"scrollY":655,"quick":true},
+{"id":5,"expanded":false,"name":"Route plage","order":18,"parentId":0,"scrollX":862,"scrollY":760,"quick":true},
+{"id":6,"expanded":false,"name":"MAP005","order":3,"parentId":0,"scrollX":1131,"scrollY":655,"quick":false},
+{"id":7,"expanded":false,"name":"Ville","order":4,"parentId":0,"scrollX":1131,"scrollY":1055,"quick":true},
+{"id":8,"expanded":false,"name":"Village montagnard","order":5,"parentId":7,"scrollX":1131,"scrollY":655,"quick":false},
+{"id":9,"expanded":false,"name":"Ville forestière","order":6,"parentId":7,"scrollX":1131,"scrollY":837,"quick":false},
+{"id":10,"expanded":false,"name":"Village de pêcheurs","order":7,"parentId":7,"scrollX":1129,"scrollY":657.5,"quick":false},
+>>>>>>> main
 {"id":11,"expanded":false,"name":"Forêt","order":16,"parentId":0,"scrollX":861,"scrollY":1257.5,"quick":false},
 {"id":12,"expanded":false,"name":"Maison de l'isolé","order":8,"parentId":7,"scrollX":710,"scrollY":634.5,"quick":false},
 {"id":13,"expanded":true,"name":"Lac","order":19,"parentId":0,"scrollX":861,"scrollY":626.5,"quick":false},
