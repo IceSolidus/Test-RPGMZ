@@ -6,7 +6,7 @@ null,
 {"id":4,"expanded":false,"name":"Plage","order":2,"parentId":0,"scrollX":1131,"scrollY":840,"quick":true},
 {"id":5,"expanded":false,"name":"Route plage","order":4,"parentId":4,"scrollX":1142,"scrollY":624,"quick":true},
 {"id":6,"expanded":false,"name":"MAP005","order":5,"parentId":0,"scrollX":1131,"scrollY":655,"quick":false},
-{"id":7,"expanded":false,"name":"Ville","order":6,"parentId":0,"scrollX":1682,"scrollY":1756,"quick":true},
+{"id":7,"expanded":true,"name":"Ville","order":6,"parentId":0,"scrollX":1682.5,"scrollY":1756.5,"quick":true},
 {"id":8,"expanded":false,"name":"Village montagnard","order":7,"parentId":7,"scrollX":1131,"scrollY":655,"quick":false},
 {"id":9,"expanded":false,"name":"Ville forestière","order":8,"parentId":7,"scrollX":1131,"scrollY":837,"quick":false},
 {"id":10,"expanded":false,"name":"Village de pêcheurs","order":9,"parentId":7,"scrollX":1129,"scrollY":657.5,"quick":false},
@@ -38,5 +38,5 @@ null,
 {"id":36,"expanded":true,"name":"Lac (inverted)","order":38,"parentId":26,"scrollX":3669,"scrollY":1867,"quick":false},
 {"id":37,"expanded":true,"name":"Maison de l'anxiété","order":30,"parentId":29,"scrollX":816,"scrollY":624,"quick":false},
 {"id":38,"expanded":false,"name":"Donjons","order":39,"parentId":26,"scrollX":1131,"scrollY":655,"quick":false},
-{"id":39,"expanded":true,"name":"Donjon de l'anxiété","order":31,"parentId":37,"scrollX":1146,"scrollY":3124,"quick":true}
+{"id":39,"expanded":true,"name":"Donjon de l'anxiété","order":31,"parentId":37,"scrollX":1146.5,"scrollY":3124.5,"quick":true}
 ]
