@@ -92,6 +92,12 @@
  * @type string
  * @default 1
  *
+ * @param ws_menuGauges
+ * @text Valeur max sur les jauges du menu
+ * @desc Une valeur gérée et générée automatiquement par Windowset Builder. Ne la modifiez pas à la main (modifiez-la dans Windowset Builder).
+ * @type string
+ * @default {}
+ *
  * @param ws_scmWindows
  * @text Remplacements liés à SceneCustomMenu
  * @desc Une valeur gérée et générée automatiquement par Windowset Builder. Ne la modifiez pas à la main (modifiez-la dans Windowset Builder).
@@ -115,6 +121,12 @@
  * @desc Une valeur gérée et générée automatiquement par Windowset Builder. Ne la modifiez pas à la main (modifiez-la dans Windowset Builder).
  * @type string
  * @default false
+ *
+ * @param ws_battleLogMmo
+ * @text Accumuler et faire défiler le journal de combat
+ * @desc Une valeur gérée et générée automatiquement par Windowset Builder. Ne la modifiez pas à la main (modifiez-la dans Windowset Builder).
+ * @type string
+ * @default {}
  *
  * @param ws_battleEnemySelKeepStatus
  * @text Garder le statut pendant la sélection d’ennemi
@@ -1323,12 +1335,14 @@
       const vox = wsbGaugeOff(g.valueOffsetX);
       const voy = wsbGaugeOff(g.valueOffsetY);
       const vcy = ey + Math.round((h - lineH) / 2);
+      const showMax = g.maxVisible === true;
+      const valText = showMax ? String(vals.cur) + '/' + String(vals.max) : String(vals.cur);
       if (layout === 'ring') {
         wsbDrawMenuGauge(this.contents, 'ring', ex + box, ey + boy, w, h, vals.rate, color1, color2, backColor, opts);
         const d = Math.min(w, h);
-        this.contents.fontSize = Math.max(10, Math.round(d * 0.3));
+        this.contents.fontSize = Math.max(9, Math.round(d * (showMax ? 0.22 : 0.3)));
         this.changeTextColor(ColorManager.normalColor());
-        this.drawText(String(vals.cur), ex + box + vox, vcy + boy + voy, w, 'center');
+        this.drawText(valText, ex + box + vox, vcy + boy + voy, w, 'center');
         this.resetFontSettings();
         return;
       }
@@ -1345,7 +1359,7 @@
       const gy = ey + Math.floor((h - gh) / 2) + boy;
       wsbDrawMenuGauge(this.contents, layout, gx, gy, gw, gh, vals.rate, color1, color2, backColor, opts);
       this.changeTextColor(ColorManager.normalColor());
-      this.drawText(String(vals.cur), gx + vox, vcy + boy + voy, gw - 2, 'right');
+      this.drawText(valText, gx + vox, vcy + boy + voy, gw - 2, 'right');
       this.resetFontSettings();
     }
     wsbDrawVariableElement(actor, el, ex, ey, lineH) {
@@ -2983,6 +2997,7 @@
     const RING_GAP = 4;
     const SLANT_ANGLE = readInt(gauges.slantAngle, 31, 10, 60);
     const SEGMENT_COUNT = readInt(gauges.segmentCount, 10, 4, 20);
+    const VALUE_FS = readInt(gauges.valueFontSize, 0, 10, 48);
 
     const GAUGE_TYPES = ['hp', 'mp', 'tp'];
     const layoutOf = (type) => {
@@ -3576,7 +3591,7 @@
         const RS = ringSizeOf(this._statusType);
         const currentValue = this.currentValue();
         this.setupValueFont();
-        this.bitmap.fontSize = Math.max(9, Math.round(RS * 0.3));
+        this.bitmap.fontSize = VALUE_FS > 0 ? VALUE_FS : Math.max(9, Math.round(RS * 0.3));
         this.bitmap.drawText(
           currentValue,
           0,
@@ -3585,6 +3600,76 @@
           Math.round(RS * 0.34),
           'center',
         );
+      };
+    }
+
+    if (VALUE_FS > 0) {
+      const _wsp_Sprite_Gauge_setupValueFont_fs = Sprite_Gauge.prototype.setupValueFont;
+      Sprite_Gauge.prototype.setupValueFont = function () {
+        _wsp_Sprite_Gauge_setupValueFont_fs.call(this);
+        if (isShapedTarget(this)) this.bitmap.fontSize = VALUE_FS;
+      };
+    }
+
+    const maxVisOf = (type) => {
+      const g = gaugeOf(type);
+      return !!(g && g.maxVisible === true);
+    };
+    const maxValueDrawWidth = (bm, text, aw) => {
+      if (typeof bm.measureTextWidth !== 'function') return aw;
+      const natural = bm.measureTextWidth(text);
+      if (!(natural > 0)) return aw;
+      let worstW = natural;
+      const party = typeof $gameParty !== 'undefined' ? $gameParty : null;
+      const members =
+        party && typeof party.battleMembers === 'function' ? party.battleMembers() : [];
+      for (let i = 0; i < members.length; i++) {
+        const a = members[i];
+        if (!a) continue;
+        for (let j = 0; j < GAUGE_TYPES.length; j++) {
+          const t = GAUGE_TYPES[j];
+          if (!maxVisOf(t)) continue;
+          const mx =
+            t === 'hp'
+              ? a.mhp
+              : t === 'mp'
+                ? a.mmp
+                : typeof a.maxTp === 'function'
+                  ? a.maxTp()
+                  : 100;
+          const w = bm.measureTextWidth(String(mx) + '/' + String(mx));
+          if (w > worstW) worstW = w;
+        }
+      }
+      const budget = worstW > aw ? (natural * aw) / worstW : natural + 2;
+      return Math.max(1, Math.min(aw, Math.floor(budget)));
+    };
+    if (GAUGE_TYPES.some(maxVisOf)) {
+      const _wsp_Sprite_Gauge_drawValue_max = Sprite_Gauge.prototype.drawValue;
+      Sprite_Gauge.prototype.drawValue = function () {
+        if (!isShapedTarget(this) || !maxVisOf(this._statusType)) {
+          _wsp_Sprite_Gauge_drawValue_max.call(this);
+          return;
+        }
+        const maxValue =
+          typeof this.currentMaxValue === 'function' ? this.currentMaxValue() : null;
+        if (maxValue === null || maxValue === undefined) {
+          _wsp_Sprite_Gauge_drawValue_max.call(this);
+          return;
+        }
+        const text = String(this.currentValue()) + '/' + String(maxValue);
+        if (layoutOf(this._statusType) === 'ring') {
+          const RS = ringSizeOf(this._statusType);
+          this.setupValueFont();
+          this.bitmap.fontSize = VALUE_FS > 0 ? VALUE_FS : Math.max(8, Math.round(RS * 0.22));
+          this.bitmap.drawText(text, 0, Math.round(RS * 0.4), RS, Math.round(RS * 0.34), 'center');
+          return;
+        }
+        const gx = typeof this.gaugeX === 'function' ? this.gaugeX() : 0;
+        const aw = Math.max(24, this.bitmapWidth() - gx - 2);
+        this.setupValueFont();
+        const dw = maxValueDrawWidth(this.bitmap, text, aw);
+        this.bitmap.drawText(text, this.bitmapWidth() - dw, 0, dw, this.textHeight(), 'right');
       };
     }
 
@@ -3701,6 +3786,313 @@
         }
         const o = valueOffOf(this._statusType);
         drawShifted(this, o.x, o.y, _wsp_Sprite_Gauge_drawValue_off);
+      };
+    }
+  }
+
+  function readMenuGauges() {
+    const params = PluginManager.parameters(PLUGIN_NAME);
+    const raw = params && params.ws_menuGauges ? params.ws_menuGauges : '{}';
+    try {
+      const parsed = JSON.parse(raw);
+      return parsed && typeof parsed === 'object' && !Array.isArray(parsed) ? parsed : {};
+    } catch (e) {
+      console.error('[WindowsetMenu] ws_menuGauges parse error', e);
+      return {};
+    }
+  }
+  WsbMenu._menuGauges = readMenuGauges();
+
+  if (Object.keys(WsbMenu._menuGauges).length > 0 && typeof Sprite_Gauge !== 'undefined') {
+    const menuGauges = WsbMenu._menuGauges;
+    const MENU_TYPES = ['hp', 'mp', 'tp'];
+    const menuStyleOf = (type) =>
+      menuGauges && menuGauges[type] ? menuGauges[type] : null;
+    const menuInt = (raw, def, lo, hi) => {
+      const n = Number(raw);
+      if (!Number.isFinite(n)) return def;
+      return Math.max(lo, Math.min(hi, Math.round(n)));
+    };
+    const menuMaxVisOf = (type) => {
+      const g = menuStyleOf(type);
+      return !!(g && g.maxVisible === true);
+    };
+    const menuOffOfKey = (type, kx, ky) => {
+      const g = menuStyleOf(type);
+      return { x: menuInt(g && g[kx], 0, -100, 100), y: menuInt(g && g[ky], 0, -100, 100) };
+    };
+    const menuValueOffOf = (type) => {
+      const b = menuOffOfKey(type, 'barOffsetX', 'barOffsetY');
+      const v = menuOffOfKey(type, 'valueOffsetX', 'valueOffsetY');
+      return { x: b.x + v.x, y: b.y + v.y };
+    };
+    const menuBarLenOf = (type) => {
+      const g = menuStyleOf(type);
+      return menuInt(g && g.barLengthDelta, 0, -100, 100);
+    };
+    const MENU_OFF_X = menuInt(menuGauges.offsetX, 0, -200, 200);
+    const MENU_OFF_Y = menuInt(menuGauges.offsetY, 0, -200, 200);
+    const outOfBattle = () =>
+      !(typeof Scene_Battle !== 'undefined' && SceneManager._scene instanceof Scene_Battle);
+    const isMenuTarget = (sprite) =>
+      outOfBattle() &&
+      (sprite._statusType === 'hp' ||
+        sprite._statusType === 'mp' ||
+        sprite._statusType === 'tp');
+    const isMenuGaugeTarget = (sprite) => isMenuTarget(sprite) && menuMaxVisOf(sprite._statusType);
+    const menuTouchTexture = (bitmap) => {
+      if (bitmap && bitmap._baseTexture && typeof bitmap._baseTexture.update === 'function') {
+        bitmap._baseTexture.update();
+      }
+    };
+
+    if (MENU_OFF_X !== 0 || MENU_OFF_Y !== 0) {
+      const _wsp_Sprite_Gauge_move_menu = Sprite_Gauge.prototype.move;
+      Sprite_Gauge.prototype.move = function (x, y) {
+        if (isMenuTarget(this)) {
+          _wsp_Sprite_Gauge_move_menu.call(this, x + MENU_OFF_X, y + MENU_OFF_Y);
+          return;
+        }
+        _wsp_Sprite_Gauge_move_menu.call(this, x, y);
+      };
+    }
+
+    if (MENU_TYPES.some((t) => {
+      const g = menuStyleOf(t);
+      return !!(g && (typeof g.color1 === 'string' || typeof g.color2 === 'string' || typeof g.backColor === 'string'));
+    })) {
+      const _wsp_Sprite_Gauge_gaugeColor1_menu = Sprite_Gauge.prototype.gaugeColor1;
+      Sprite_Gauge.prototype.gaugeColor1 = function () {
+        if (isMenuTarget(this)) {
+          const g = menuStyleOf(this._statusType);
+          if (g && typeof g.color1 === 'string') return g.color1;
+        }
+        return _wsp_Sprite_Gauge_gaugeColor1_menu.call(this);
+      };
+      const _wsp_Sprite_Gauge_gaugeColor2_menu = Sprite_Gauge.prototype.gaugeColor2;
+      Sprite_Gauge.prototype.gaugeColor2 = function () {
+        if (isMenuTarget(this)) {
+          const g = menuStyleOf(this._statusType);
+          if (g && typeof g.color2 === 'string') return g.color2;
+        }
+        return _wsp_Sprite_Gauge_gaugeColor2_menu.call(this);
+      };
+      const _wsp_Sprite_Gauge_gaugeBackColor_menu = Sprite_Gauge.prototype.gaugeBackColor;
+      Sprite_Gauge.prototype.gaugeBackColor = function () {
+        if (isMenuTarget(this)) {
+          const g = menuStyleOf(this._statusType);
+          if (g && typeof g.backColor === 'string') return g.backColor;
+        }
+        return _wsp_Sprite_Gauge_gaugeBackColor_menu.call(this);
+      };
+    }
+
+    const menuLayoutOf = (type) => {
+      const g = menuStyleOf(type);
+      if (g && typeof g.layout === 'string') return g.layout;
+      return typeof menuGauges.layout === 'string' ? menuGauges.layout : 'bar';
+    };
+    const menuRingSizeOf = (type) => {
+      const g = menuStyleOf(type);
+      const raw = g && typeof g.ringSize === 'number' ? g.ringSize : menuGauges.ringSize;
+      return menuInt(raw, 36, 24, 64);
+    };
+    const menuRingLineWOf = (type) => {
+      const g = menuStyleOf(type);
+      const raw = g && typeof g.ringThickness === 'number' ? g.ringThickness : menuGauges.ringThickness;
+      return menuInt(raw, 5, 2, 12);
+    };
+    const menuSegCountOf = (type) => {
+      const g = menuStyleOf(type);
+      const raw = g && typeof g.segmentCount === 'number' ? g.segmentCount : menuGauges.segmentCount;
+      return menuInt(raw, 10, 4, 20);
+    };
+    const menuUsesShape = MENU_TYPES.some((t) => menuLayoutOf(t) !== 'bar');
+
+    if (MENU_TYPES.some((t) => menuLayoutOf(t) === 'ring')) {
+      const _wsp_Sprite_Gauge_setup_menuRing = Sprite_Gauge.prototype.setup;
+      Sprite_Gauge.prototype.setup = function (battler, statusType) {
+        if (
+          outOfBattle() &&
+          (statusType === 'hp' || statusType === 'mp' || statusType === 'tp') &&
+          menuLayoutOf(statusType) === 'ring' &&
+          this.bitmap &&
+          typeof Bitmap !== 'undefined'
+        ) {
+          const h = Math.max(this.bitmapHeight(), menuRingSizeOf(statusType));
+          if (this.bitmap.height < h) this.bitmap = new Bitmap(this.bitmapWidth(), h);
+        }
+        _wsp_Sprite_Gauge_setup_menuRing.call(this, battler, statusType);
+      };
+    }
+
+    if (menuUsesShape) {
+      const _wsp_Sprite_Gauge_drawGaugeRect_menu = Sprite_Gauge.prototype.drawGaugeRect;
+      Sprite_Gauge.prototype.drawGaugeRect = function (x, y, width, height) {
+        const lay = isMenuTarget(this) ? menuLayoutOf(this._statusType) : 'bar';
+        if (lay === 'bar' || lay === 'none') {
+          _wsp_Sprite_Gauge_drawGaugeRect_menu.call(this, x, y, width, height);
+          return;
+        }
+        const type = this._statusType;
+        const rate = typeof this.gaugeRate === 'function' ? this.gaugeRate() : 0;
+        const opts = {
+          ringThickness: menuRingLineWOf(type),
+          segmentCount: menuSegCountOf(type),
+        };
+        if (lay === 'ring') {
+          const d = menuRingSizeOf(type);
+          wsbDrawMenuGauge(
+            this.bitmap,
+            'ring',
+            x,
+            0,
+            d,
+            d,
+            rate,
+            this.gaugeColor1(),
+            this.gaugeColor2(),
+            this.gaugeBackColor(),
+            opts
+          );
+        } else {
+          wsbDrawMenuGauge(
+            this.bitmap,
+            lay,
+            x,
+            y,
+            width,
+            height,
+            rate,
+            this.gaugeColor1(),
+            this.gaugeColor2(),
+            this.gaugeBackColor(),
+            opts
+          );
+        }
+        menuTouchTexture(this.bitmap);
+      };
+    }
+
+    if (MENU_TYPES.some((t) => menuBarLenOf(t) !== 0)) {
+      const _wsp_Sprite_Gauge_drawGauge_menuLen = Sprite_Gauge.prototype.drawGauge;
+      Sprite_Gauge.prototype.drawGauge = function () {
+        if (!isMenuTarget(this) || menuBarLenOf(this._statusType) === 0) {
+          _wsp_Sprite_Gauge_drawGauge_menuLen.call(this);
+          return;
+        }
+        const gx = typeof this.gaugeX === 'function' ? this.gaugeX() : 0;
+        const gy = this.textHeight() - this.gaugeHeight();
+        const gw = Math.max(0, this.bitmapWidth() - gx + menuBarLenOf(this._statusType));
+        this.drawGaugeRect(gx, gy, gw, this.gaugeHeight());
+      };
+    }
+
+    if (MENU_TYPES.some((t) => menuLayoutOf(t) === 'none')) {
+      const _wsp_Sprite_Gauge_drawGauge_menuNone = Sprite_Gauge.prototype.drawGauge;
+      Sprite_Gauge.prototype.drawGauge = function () {
+        if (isMenuTarget(this) && menuLayoutOf(this._statusType) === 'none') return;
+        _wsp_Sprite_Gauge_drawGauge_menuNone.call(this);
+      };
+    }
+    const menuMaxOf = (battler, type) => {
+      if (!battler) return null;
+      if (type === 'hp') return battler.mhp;
+      if (type === 'mp') return battler.mmp;
+      return typeof battler.maxTp === 'function' ? battler.maxTp() : 100;
+    };
+    const menuValueDrawWidth = (bm, text, aw) => {
+      if (typeof bm.measureTextWidth !== 'function') return aw;
+      const natural = bm.measureTextWidth(text);
+      if (!(natural > 0)) return aw;
+      let worstW = natural;
+      const party = typeof $gameParty !== 'undefined' ? $gameParty : null;
+      const members = party && typeof party.members === 'function' ? party.members() : [];
+      for (let i = 0; i < members.length; i++) {
+        for (let j = 0; j < MENU_TYPES.length; j++) {
+          if (!menuMaxVisOf(MENU_TYPES[j])) continue;
+          const mx = menuMaxOf(members[i], MENU_TYPES[j]);
+          if (mx === null || mx === undefined) continue;
+          const w = bm.measureTextWidth(String(mx) + '/' + String(mx));
+          if (w > worstW) worstW = w;
+        }
+      }
+      const budget = worstW > aw ? (natural * aw) / worstW : natural + 2;
+      return Math.max(1, Math.min(aw, Math.floor(budget)));
+    };
+    const _wsp_Sprite_Gauge_drawValue_menuMax = Sprite_Gauge.prototype.drawValue;
+    Sprite_Gauge.prototype.drawValue = function () {
+      if (!isMenuGaugeTarget(this)) {
+        _wsp_Sprite_Gauge_drawValue_menuMax.call(this);
+        return;
+      }
+      const maxValue =
+        typeof this.currentMaxValue === 'function' ? this.currentMaxValue() : null;
+      if (maxValue === null || maxValue === undefined) {
+        _wsp_Sprite_Gauge_drawValue_menuMax.call(this);
+        return;
+      }
+      const text = String(this.currentValue()) + '/' + String(maxValue);
+      const gx = typeof this.gaugeX === 'function' ? this.gaugeX() : 0;
+      const aw = Math.max(24, this.bitmapWidth() - gx - 2);
+      this.setupValueFont();
+      const dw = menuValueDrawWidth(this.bitmap, text, aw);
+      this.bitmap.drawText(text, this.bitmapWidth() - dw, 0, dw, this.textHeight(), 'right');
+    };
+
+    if (menuMaxVisOf('tp')) {
+      const _wsp_Sprite_Gauge_isValid_menuTp = Sprite_Gauge.prototype.isValid;
+      Sprite_Gauge.prototype.isValid = function () {
+        if (this._battler && this._statusType === 'tp' && isMenuTarget(this)) return true;
+        return _wsp_Sprite_Gauge_isValid_menuTp.call(this);
+      };
+    }
+
+    const _wsp_anyMenuGaugeOffset = MENU_TYPES.some((t) => {
+      const a = menuOffOfKey(t, 'labelOffsetX', 'labelOffsetY');
+      const b = menuOffOfKey(t, 'barOffsetX', 'barOffsetY');
+      const c = menuOffOfKey(t, 'valueOffsetX', 'valueOffsetY');
+      return a.x !== 0 || a.y !== 0 || b.x !== 0 || b.y !== 0 || c.x !== 0 || c.y !== 0;
+    });
+    if (_wsp_anyMenuGaugeOffset) {
+      const menuDrawShifted = (sprite, ox, oy, original) => {
+        if ((ox === 0 && oy === 0) || !sprite.bitmap) {
+          original.call(sprite);
+          return;
+        }
+        const ctx = sprite.bitmap.context;
+        ctx.save();
+        ctx.translate(ox, oy);
+        original.call(sprite);
+        ctx.restore();
+        menuTouchTexture(sprite.bitmap);
+      };
+      const _wsp_Sprite_Gauge_drawLabel_menuOff = Sprite_Gauge.prototype.drawLabel;
+      Sprite_Gauge.prototype.drawLabel = function () {
+        if (!isMenuTarget(this)) {
+          _wsp_Sprite_Gauge_drawLabel_menuOff.call(this);
+          return;
+        }
+        const o = menuOffOfKey(this._statusType, 'labelOffsetX', 'labelOffsetY');
+        menuDrawShifted(this, o.x, o.y, _wsp_Sprite_Gauge_drawLabel_menuOff);
+      };
+      const _wsp_Sprite_Gauge_drawGauge_menuOff = Sprite_Gauge.prototype.drawGauge;
+      Sprite_Gauge.prototype.drawGauge = function () {
+        if (!isMenuTarget(this)) {
+          _wsp_Sprite_Gauge_drawGauge_menuOff.call(this);
+          return;
+        }
+        const o = menuOffOfKey(this._statusType, 'barOffsetX', 'barOffsetY');
+        menuDrawShifted(this, o.x, o.y, _wsp_Sprite_Gauge_drawGauge_menuOff);
+      };
+      const _wsp_Sprite_Gauge_drawValue_menuOff = Sprite_Gauge.prototype.drawValue;
+      Sprite_Gauge.prototype.drawValue = function () {
+        if (!isMenuTarget(this)) {
+          _wsp_Sprite_Gauge_drawValue_menuOff.call(this);
+          return;
+        }
+        const o = menuValueOffOf(this._statusType);
+        menuDrawShifted(this, o.x, o.y, _wsp_Sprite_Gauge_drawValue_menuOff);
       };
     }
   }
@@ -5210,6 +5602,20 @@
     return !!(params && params[key] === 'true');
   }
   WsbMenu._battleLogHidden = wsbReadFlag('ws_battleLogHidden');
+  function wsbReadBattleLogMmo() {
+    const params = PluginManager.parameters(PLUGIN_NAME);
+    const raw = params ? params.ws_battleLogMmo : '';
+    if (raw === 'true') return { on: true };
+    if (typeof raw !== 'string' || raw === '' || raw === 'false') return null;
+    try {
+      const parsed = JSON.parse(raw);
+      if (parsed && parsed.on === true) return parsed;
+    } catch (e) {
+      return null;
+    }
+    return null;
+  }
+  WsbMenu._battleLogMmo = wsbReadBattleLogMmo();
   WsbMenu._enemySelKeepStatus = wsbReadFlag('ws_battleEnemySelKeepStatus');
   WsbMenu._actorDmgPopup = wsbReadFlag('ws_battleActorDmgPopup');
   WsbMenu._frontActorAnim = wsbReadFlag('ws_battleActorAnim');
@@ -5219,6 +5625,126 @@
     Window_BattleLog.prototype.update = function () {
       _wsp_Window_BattleLog_update.call(this);
       this.visible = false;
+    };
+  }
+
+  if (!WSB_YIELD_BATTLE && WsbMenu._battleLogMmo && typeof Window_BattleLog !== 'undefined') {
+    const WSB_MMO_LOG_KEEP = 200;
+    const mmoOpts = WsbMenu._battleLogMmo;
+    const mmoExpireFrames =
+      typeof mmoOpts.expire === 'number' && mmoOpts.expire > 0
+        ? Math.floor(mmoOpts.expire * 60)
+        : 0;
+    const mmoFontSize = typeof mmoOpts.size === 'number' && mmoOpts.size > 0 ? mmoOpts.size : 0;
+    const mmoFontFile = typeof mmoOpts.font === 'string' && mmoOpts.font !== '' ? mmoOpts.font : '';
+    let mmoFontFamily = '';
+    if (
+      mmoFontFile &&
+      typeof FontManager !== 'undefined' &&
+      typeof FontManager.load === 'function'
+    ) {
+      mmoFontFamily = 'wsb-battlelog-font';
+      try {
+        FontManager.load(mmoFontFamily, mmoFontFile);
+      } catch (e) {
+        mmoFontFamily = '';
+      }
+    }
+
+    const _wsp_WBL_initialize_mmo = Window_BattleLog.prototype.initialize;
+    Window_BattleLog.prototype.initialize = function () {
+      this._wsbMmoLog = [];
+      _wsp_WBL_initialize_mmo.apply(this, arguments);
+    };
+
+    if (mmoFontSize > 0) {
+      Window_BattleLog.prototype.lineHeight = function () {
+        return mmoFontSize + 10;
+      };
+      const _wsp_WBL_calcTextHeight_mmo = Window_BattleLog.prototype.calcTextHeight;
+      if (typeof _wsp_WBL_calcTextHeight_mmo === 'function') {
+        Window_BattleLog.prototype.calcTextHeight = function () {
+          const base = _wsp_WBL_calcTextHeight_mmo.apply(this, arguments);
+          let main = 26;
+          try {
+            if (typeof $gameSystem !== 'undefined' && typeof $gameSystem.mainFontSize === 'function') {
+              main = $gameSystem.mainFontSize();
+            }
+          } catch (e) {
+            main = 26;
+          }
+          return base + (main - mmoFontSize);
+        };
+      }
+    }
+
+    if (mmoFontSize > 0 || mmoFontFamily) {
+      const _wsp_WBL_resetFontSettings_mmo = Window_BattleLog.prototype.resetFontSettings;
+      Window_BattleLog.prototype.resetFontSettings = function () {
+        _wsp_WBL_resetFontSettings_mmo.call(this);
+        if (mmoFontFamily) this.contents.fontFace = mmoFontFamily;
+        if (mmoFontSize > 0) this.contents.fontSize = mmoFontSize;
+      };
+    }
+
+    Window_BattleLog.prototype._wsbMmoVisibleLines = function () {
+      const lineH = Math.max(1, this.itemHeight ? this.itemHeight() : this.lineHeight());
+      const innerH =
+        typeof this.innerHeight === 'number' ? this.innerHeight : this.height - this.padding * 2;
+      return Math.max(1, Math.floor(innerH / lineH));
+    };
+
+    Window_BattleLog.prototype._wsbMmoTail = function () {
+      const log = this._wsbMmoLog || [];
+      const n = this._wsbMmoVisibleLines();
+      return log.slice(Math.max(0, log.length - n));
+    };
+
+    const _wsp_WBL_addText_mmo = Window_BattleLog.prototype.addText;
+    Window_BattleLog.prototype.addText = function (text) {
+      if (!this._wsbMmoLog) this._wsbMmoLog = [];
+      this._wsbMmoLog.push({ text: text, at: Graphics.frameCount });
+      while (this._wsbMmoLog.length > WSB_MMO_LOG_KEEP) this._wsbMmoLog.shift();
+      _wsp_WBL_addText_mmo.call(this, text);
+    };
+
+    if (mmoExpireFrames > 0) {
+      const _wsp_WBL_update_mmo = Window_BattleLog.prototype.update;
+      Window_BattleLog.prototype.update = function () {
+        _wsp_WBL_update_mmo.call(this);
+        const log = this._wsbMmoLog;
+        if (!log || log.length === 0) return;
+        const limit = Graphics.frameCount - mmoExpireFrames;
+        let n = 0;
+        while (n < log.length && log[n].at <= limit) n++;
+        if (n > 0) {
+          log.splice(0, n);
+          this.refresh();
+        }
+      };
+    }
+
+    Window_BattleLog.prototype.refresh = function () {
+      this.drawBackground();
+      this.contents.clear();
+      const tail = this._wsbMmoTail();
+      for (let i = 0; i < tail.length; i++) {
+        const rect = this.lineRect(i);
+        this.contents.clearRect(rect.x, rect.y, rect.width, rect.height);
+        this.drawTextEx(tail[i].text, rect.x, rect.y, rect.width);
+      }
+    };
+
+    Window_BattleLog.prototype.drawBackground = function () {
+      if (!this.contentsBack) return;
+      this.contentsBack.clear();
+      if (this.opacity > 0) return;
+      const count = this._wsbMmoTail().length;
+      if (count <= 0) return;
+      const height = count * this.itemHeight();
+      this.contentsBack.paintOpacity = this.backPaintOpacity();
+      this.contentsBack.fillRect(0, 0, this.innerWidth, height, this.backColor());
+      this.contentsBack.paintOpacity = 255;
     };
   }
 

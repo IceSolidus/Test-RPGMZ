@@ -262,7 +262,7 @@
     };
   })();
 
-  var _wsp_gold_element = {"key":"gold","targetClass":"Window_Gold","hookType":"sceneRect","x":8,"y":650,"w":223,"h":57,"opacity":1,"bgType":"window","fontSize":26,"frameVisible":true,"displayName":"Gold Window","visible":true,"windowskin":"Window_WSB_gold","bgPartId":"user:ua_ms7xv6db_1","framePartId":"user:ua_msfssllf_1","roundBgCorners":false,"opacityGradient":{"h":[{"p":0,"a":0.46},{"p":0.464,"a":1},{"p":1,"a":0.46}]}};
+  var _wsp_gold_element = {"key":"gold","targetClass":"Window_Gold","hookType":"sceneRect","x":8,"y":650,"w":223,"h":57,"opacity":1,"bgType":"window","fontSize":26,"frameVisible":true,"displayName":"Gold Window","visible":true,"windowskin":"Window_WSB_gold","bgPartId":"000","framePartId":"user:ua_msfssllf_1","roundBgCorners":false,"opacityGradient":{"h":[{"p":0,"a":0.46},{"p":0.464,"a":1},{"p":1,"a":0.46}]}};
   (function() {
     var el = _wsp_gold_element;
     if (true) {
@@ -301,7 +301,7 @@
     };
   })();
 
-  var _wsp_options_element = {"key":"options","targetClass":"Window_Options","hookType":"sceneRect","x":440,"y":194,"w":400,"h":332,"opacity":1,"bgType":"window","fontSize":26,"frameVisible":true,"displayName":"Options","visible":true,"windowskin":"Window_WSB_options","bgPartId":"user:ua_ms7xv6db_1","framePartId":"000","scrollBgEnabled":true,"scrollBgSpeedX":0.5,"scrollBgSpeedY":0.5,"itemBackground":{"v":false,"t":{"h":"#202020","a":0.5},"b":{"h":"#000000","a":0.5}}};
+  var _wsp_options_element = {"key":"options","targetClass":"Window_Options","hookType":"sceneRect","x":440,"y":194,"w":400,"h":332,"opacity":1,"bgType":"window","fontSize":26,"frameVisible":true,"displayName":"Options","visible":true,"windowskin":"Window_WSB_options","bgPartId":"user:ua_ms7xv6db_1","framePartId":"000","itemBackground":{"v":false,"t":{"h":"#202020","a":0.5},"b":{"h":"#000000","a":0.5}}};
   (function() {
     var el = _wsp_options_element;
     if (!ws_isPluginEnabled("OptionEx")) {
@@ -340,7 +340,7 @@
     };
   })();
 
-  var _wsp_itemCat_element = {"key":"itemCat","targetClass":"Window_ItemCategory","hookType":"sceneRect","x":0,"y":154,"w":1272,"h":68,"opacity":1,"bgType":"window","fontSize":26,"frameVisible":true,"displayName":"Item Category","visible":true,"windowskin":"Window_WSB_itemCat","bgPartId":"user:ua_ms7xv6db_1","framePartId":"user:ua_msfssllf_1","scrollBgEnabled":true,"scrollBgSpeedX":-0.3,"scrollBgSpeedY":-0.3,"itemBackground":{"v":true,"t":{"h":"#202020","a":0},"b":{"h":"#9aedfe","a":0.7}}};
+  var _wsp_itemCat_element = {"key":"itemCat","targetClass":"Window_ItemCategory","hookType":"sceneRect","x":0,"y":154,"w":1272,"h":68,"opacity":1,"bgType":"window","fontSize":26,"frameVisible":true,"displayName":"Item Category","visible":true,"windowskin":"Window_WSB_itemCat","bgPartId":"user:ua_ms7xv6db_1","framePartId":"000","itemBackground":{"v":true,"t":{"h":"#202020","a":0},"b":{"h":"#9aedfe","a":0.78}}};
   (function() {
     var el = _wsp_itemCat_element;
     if (true) {
@@ -379,7 +379,7 @@
     };
   })();
 
-  var _wsp_save_element = {"key":"save","targetClass":"Window_SavefileList","hookType":"sceneRect","x":4,"y":100,"w":1272,"h":616,"opacity":1,"bgType":"window","fontSize":26,"frameVisible":true,"displayName":"Savefile List","visible":true,"windowskin":"Window_WSB_save","bgPartId":"user:ua_ms7xv6db_1","framePartId":"user:ua_msfssllf_1","itemBackground":{"v":true,"t":{"h":"#202020","a":0},"b":{"h":"#66fffc","a":0.44}}};
+  var _wsp_save_element = {"key":"save","targetClass":"Window_SavefileList","hookType":"sceneRect","x":4,"y":100,"w":1272,"h":616,"opacity":1,"bgType":"window","fontSize":26,"frameVisible":true,"displayName":"Savefile List","visible":true,"windowskin":"Window_WSB_save","framePartId":"000"};
   (function() {
     var el = _wsp_save_element;
     if (!ws_isPluginEnabled("AltSaveScreen")) {
@@ -429,7 +429,7 @@
     };
   })();
 
-  var _wsp_itemList_element = {"key":"itemList","targetClass":"Window_ItemList","hookType":"sceneRect","x":4,"y":224,"w":1272,"h":496,"opacity":1,"bgType":"window","fontSize":26,"frameVisible":true,"displayName":"Item List","visible":true,"windowskin":"Window_WSB_itemList","bgPartId":"user:ua_ms7xv6db_1","framePartId":"user:ua_msfssllf_1","scrollBgEnabled":true,"scrollBgSpeedX":0.3,"scrollBgSpeedY":0.3,"itemBackground":{"v":true,"t":{"h":"#202020","a":0},"b":{"h":"#9aedfe","a":0.7}}};
+  var _wsp_itemList_element = {"key":"itemList","targetClass":"Window_ItemList","hookType":"sceneRect","x":4,"y":224,"w":1272,"h":496,"opacity":1,"bgType":"window","fontSize":26,"frameVisible":true,"displayName":"Item List","visible":true,"windowskin":"Window_WSB_itemList","bgPartId":"user:ua_ms7xv6db_1","framePartId":"000","itemBackground":{"v":true,"t":{"h":"#202020","a":0},"b":{"h":"#b3f2ff","a":0.71}}};
   (function() {
     var el = _wsp_itemList_element;
     if (true) {
@@ -468,7 +468,7 @@
     };
   })();
 
-  var _wsp_skillType_element = {"key":"skillType","targetClass":"Window_SkillType","hookType":"sceneRect","x":1036,"y":56,"w":240,"h":156,"opacity":1,"bgType":"window","fontSize":26,"frameVisible":true,"displayName":"Skill Type","visible":true,"windowskin":"Window_WSB_skillType","bgPartId":"user:ua_ms7xv6db_1","framePartId":"000","scrollBgEnabled":true,"scrollBgSpeedX":0.2,"scrollBgSpeedY":-0.3,"itemBackground":{"v":true,"t":{"h":"#202020","a":0},"b":{"h":"#a3fdff","a":0.56}}};
+  var _wsp_skillType_element = {"key":"skillType","targetClass":"Window_SkillType","hookType":"sceneRect","x":1036,"y":154,"w":240,"h":156,"opacity":1,"bgType":"window","fontSize":26,"frameVisible":true,"displayName":"Skill Type","visible":true,"windowskin":"Window_WSB_skillType","bgPartId":"user:ua_ms7xv6db_1","framePartId":"000","itemBackground":{"v":true,"t":{"h":"#202020","a":0},"b":{"h":"#a3fdff","a":0.56}}};
   (function() {
     var el = _wsp_skillType_element;
     if (true) {
@@ -507,7 +507,7 @@
     };
   })();
 
-  var _wsp_skillStatus_element = {"key":"skillStatus","targetClass":"Window_SkillStatus","hookType":"sceneRect","x":4,"y":56,"w":1032,"h":156,"opacity":1,"bgType":"window","fontSize":26,"frameVisible":true,"displayName":"Skill Status","visible":true,"windowskin":"Window_WSB_skillStatus","bgPartId":"user:ua_ms7xv6db_1","framePartId":"000","scrollBgEnabled":true,"scrollBgSpeedX":-0.2,"scrollBgSpeedY":-0.3,"itemBackground":{"v":true,"t":{"h":"#202020","a":0},"b":{"h":"#a3fdff","a":0.56}}};
+  var _wsp_skillStatus_element = {"key":"skillStatus","targetClass":"Window_SkillStatus","hookType":"sceneRect","x":4,"y":151,"w":1032,"h":156,"opacity":1,"bgType":"window","fontSize":26,"frameVisible":true,"displayName":"Skill Status","visible":true,"windowskin":"Window_WSB_skillStatus","bgPartId":"user:ua_ms7xv6db_1","framePartId":"000","itemBackground":{"v":true,"t":{"h":"#202020","a":0},"b":{"h":"#a3fdff","a":0.56}}};
   (function() {
     var el = _wsp_skillStatus_element;
     if (true) {
@@ -546,7 +546,7 @@
     };
   })();
 
-  var _wsp_skillList_element = {"key":"skillList","targetClass":"Window_SkillList","hookType":"sceneRect","x":4,"y":212,"w":1272,"h":408,"opacity":1,"bgType":"window","fontSize":26,"frameVisible":true,"displayName":"Skill List","visible":true,"windowskin":"Window_WSB_skillList","bgPartId":"user:ua_ms7xv6db_1","framePartId":"000","scrollBgEnabled":true,"scrollBgSpeedX":0.2,"scrollBgSpeedY":0.3,"itemBackground":{"v":true,"t":{"h":"#202020","a":0},"b":{"h":"#a3fdff","a":0.56}}};
+  var _wsp_skillList_element = {"key":"skillList","targetClass":"Window_SkillList","hookType":"sceneRect","x":4,"y":312,"w":1272,"h":408,"opacity":1,"bgType":"window","fontSize":26,"frameVisible":true,"displayName":"Skill List","visible":true,"windowskin":"Window_WSB_skillList","bgPartId":"user:ua_ms7xv6db_1","framePartId":"000","itemBackground":{"v":true,"t":{"h":"#202020","a":0},"b":{"h":"#a3fdff","a":0.56}}};
   (function() {
     var el = _wsp_skillList_element;
     if (true) {
@@ -585,7 +585,7 @@
     };
   })();
 
-  var _wsp_equipCmd_element = {"key":"equipCmd","targetClass":"Window_EquipCommand","hookType":"sceneRect","x":316,"y":156,"w":960,"h":68,"opacity":1,"bgType":"window","fontSize":26,"frameVisible":true,"displayName":"Equip Command","visible":true,"windowskin":"Window_WSB_equipCmd","bgPartId":"user:ua_ms7xv6db_1","framePartId":"000","scrollBgEnabled":true,"scrollBgSpeedX":0.3,"scrollBgSpeedY":-0.3,"itemBackground":{"v":true,"t":{"h":"#202020","a":0},"b":{"h":"#94edff","a":0.61}}};
+  var _wsp_equipCmd_element = {"key":"equipCmd","targetClass":"Window_EquipCommand","hookType":"sceneRect","x":316,"y":156,"w":960,"h":68,"opacity":1,"bgType":"window","fontSize":26,"frameVisible":true,"displayName":"Equip Command","visible":true,"windowskin":"Window_WSB_equipCmd","bgPartId":"user:ua_ms7xv6db_1","framePartId":"000","itemBackground":{"v":true,"t":{"h":"#202020","a":0},"b":{"h":"#94edff","a":0.61}}};
   (function() {
     var el = _wsp_equipCmd_element;
     if (true) {
@@ -663,7 +663,7 @@
     };
   })();
 
-  var _wsp_equipItem_element = {"key":"equipItem","targetClass":"Window_EquipItem","hookType":"sceneRect","x":316,"y":230,"w":960,"h":496,"opacity":1,"bgType":"window","fontSize":26,"frameVisible":true,"displayName":"Equip Item List","visible":true,"windowskin":"Window_WSB_equipItem","bgPartId":"user:ua_ms7xv6db_1","framePartId":"000","scrollBgEnabled":true,"scrollBgSpeedX":0.2,"scrollBgSpeedY":0.3};
+  var _wsp_equipItem_element = {"key":"equipItem","targetClass":"Window_EquipItem","hookType":"sceneRect","x":316,"y":230,"w":960,"h":496,"opacity":1,"bgType":"window","fontSize":26,"frameVisible":true,"displayName":"Equip Item List","visible":true,"windowskin":"Window_WSB_equipItem","bgPartId":"user:ua_ms7xv6db_1","framePartId":"000"};
   (function() {
     var el = _wsp_equipItem_element;
     if (true) {
@@ -702,7 +702,7 @@
     };
   })();
 
-  var _wsp_equipStatus_element = {"key":"equipStatus","targetClass":"Window_EquipStatus","hookType":"sceneRect","x":4,"y":151,"w":312,"h":564,"opacity":1,"bgType":"window","fontSize":26,"frameVisible":true,"displayName":"Equip Status","visible":true,"windowskin":"Window_WSB_equipStatus","bgPartId":"user:ua_ms7xv6db_1","framePartId":"000","scrollBgEnabled":true,"scrollBgSpeedX":-0.3,"scrollBgSpeedY":-0.3};
+  var _wsp_equipStatus_element = {"key":"equipStatus","targetClass":"Window_EquipStatus","hookType":"sceneRect","x":4,"y":151,"w":312,"h":564,"opacity":1,"bgType":"window","fontSize":26,"frameVisible":true,"displayName":"Equip Status","visible":true,"windowskin":"Window_WSB_equipStatus","bgPartId":"user:ua_ms7xv6db_1","framePartId":"000"};
   (function() {
     var el = _wsp_equipStatus_element;
     if (true) {
@@ -741,7 +741,7 @@
     };
   })();
 
-  var _wsp_statusDetail_element = {"key":"statusDetail","targetClass":"Window_Status","hookType":"sceneRect","x":4,"y":56,"w":1272,"h":324,"opacity":1,"bgType":"window","fontSize":26,"frameVisible":true,"displayName":"Status Detail","visible":true,"windowskin":"Window_WSB_statusDetail","bgPartId":"user:ua_ms7xv6db_1","framePartId":"000","scrollBgEnabled":true,"scrollBgSpeedX":0.3,"scrollBgSpeedY":0.3};
+  var _wsp_statusDetail_element = {"key":"statusDetail","targetClass":"Window_Status","hookType":"sceneRect","x":4,"y":105,"w":1272,"h":324,"opacity":1,"bgType":"window","fontSize":26,"frameVisible":true,"displayName":"Status Detail","visible":true,"windowskin":"Window_WSB_statusDetail","bgPartId":"user:ua_ms7xv6db_1","framePartId":"000"};
   (function() {
     var el = _wsp_statusDetail_element;
     if (true) {
@@ -780,7 +780,7 @@
     };
   })();
 
-  var _wsp_statusParams_element = {"key":"statusParams","targetClass":"Window_StatusParams","hookType":"sceneRect","x":4,"y":380,"w":300,"h":240,"opacity":1,"bgType":"window","fontSize":26,"frameVisible":true,"displayName":"Status Params","visible":true,"windowskin":"Window_WSB_statusParams","bgPartId":"user:ua_ms7xv6db_1","framePartId":"000","scrollBgEnabled":true,"scrollBgSpeedX":-0.3,"scrollBgSpeedY":0.3};
+  var _wsp_statusParams_element = {"key":"statusParams","targetClass":"Window_StatusParams","hookType":"sceneRect","x":8,"y":429,"w":300,"h":240,"opacity":1,"bgType":"window","fontSize":26,"frameVisible":true,"displayName":"Status Params","visible":true,"windowskin":"Window_WSB_statusParams","bgPartId":"user:ua_ms7xv6db_1","framePartId":"000"};
   (function() {
     var el = _wsp_statusParams_element;
     if (true) {
@@ -819,7 +819,7 @@
     };
   })();
 
-  var _wsp_statusEquip_element = {"key":"statusEquip","targetClass":"Window_StatusEquip","hookType":"sceneRect","x":304,"y":380,"w":972,"h":240,"opacity":1,"bgType":"window","fontSize":26,"frameVisible":true,"displayName":"Status Equipment","visible":true,"windowskin":"Window_WSB_statusEquip","bgPartId":"user:ua_ms7xv6db_1","framePartId":"000","scrollBgEnabled":true,"scrollBgSpeedX":0.3,"scrollBgSpeedY":0.3};
+  var _wsp_statusEquip_element = {"key":"statusEquip","targetClass":"Window_StatusEquip","hookType":"sceneRect","x":304,"y":429,"w":972,"h":240,"opacity":1,"bgType":"window","fontSize":26,"frameVisible":true,"displayName":"Status Equipment","visible":true,"windowskin":"Window_WSB_statusEquip","bgPartId":"user:ua_ms7xv6db_1","framePartId":"000"};
   (function() {
     var el = _wsp_statusEquip_element;
     if (true) {
@@ -858,7 +858,7 @@
     };
   })();
 
-  var _wsp_gameEnd_element = {"key":"gameEnd","targetClass":"Window_GameEnd","hookType":"sceneRect","x":414,"y":319,"w":430,"h":101,"opacity":1,"bgType":"window","fontSize":26,"frameVisible":true,"displayName":"Game End Command","visible":true,"windowskin":"Window_WSB_gameEnd","bgPartId":"user:ua_ms7xv6db_1","framePartId":"user:ua_msfssllf_1","scrollBgEnabled":true,"scrollBgSpeedX":0.3,"scrollBgSpeedY":0.3,"roundBgCorners":false,"itemBackground":{"v":true,"t":{"h":"#202020","a":0},"b":{"h":"#94fdff","a":0.46}}};
+  var _wsp_gameEnd_element = {"key":"gameEnd","targetClass":"Window_GameEnd","hookType":"sceneRect","x":414,"y":319,"w":430,"h":96,"opacity":1,"bgType":"window","fontSize":26,"frameVisible":true,"displayName":"Game End Command","visible":true,"windowskin":"Window_WSB_gameEnd","framePartId":"000"};
   (function() {
     var el = _wsp_gameEnd_element;
     if (true) {
@@ -1434,7 +1434,7 @@
     };
   })();
 
-  var _wsp_helpWin_element = {"key":"helpWin","targetClass":"Window_Help","hookType":"sceneRect","x":4,"y":4,"w":1272,"h":104,"opacity":1,"bgType":"window","fontSize":26,"frameVisible":true,"displayName":"Help Window","visible":true,"windowskin":"Window_WSB_helpWin","bgPartId":"user:ua_ms7xv6db_1","framePartId":"user:ua_msfssllf_1","scrollBgEnabled":true,"scrollBgSpeedX":-0.3,"scrollBgSpeedY":-0.3,"roundBgCorners":false,"opacityGradient":{"h":[{"p":0.428,"a":1},{"p":1,"a":0}]},"itemBackground":{"v":true,"t":{"h":"#202020","a":0},"b":{"h":"#9efffd","a":0.56}}};
+  var _wsp_helpWin_element = {"key":"helpWin","targetClass":"Window_Help","hookType":"sceneRect","x":8,"y":4,"w":1268,"h":104,"opacity":1,"bgType":"window","fontSize":26,"frameVisible":true,"displayName":"Help Window","visible":true,"windowskin":"Window_WSB_helpWin","bgPartId":"user:ua_ms7xv6db_1","framePartId":"000","scrollBgEnabled":true,"scrollBgSpeedX":-0.3,"scrollBgSpeedY":-0.3,"roundBgCorners":false,"opacityGradient":{"h":[{"p":0.428,"a":1},{"p":1,"a":0}]},"itemBackground":{"v":true,"t":{"h":"#202020","a":0},"b":{"h":"#9efffd","a":0.56}}};
   (function() {
     var el = _wsp_helpWin_element;
     if (true) {
@@ -1473,7 +1473,7 @@
     };
   })();
 
-  var _wsp_message_element = {"key":"message","targetClass":"Window_Message","hookType":"sceneRect","x":4,"y":532,"w":1272,"h":162,"opacity":0.9803921568627451,"bgType":"window","fontSize":26,"frameVisible":true,"displayName":"Message Window","visible":true,"windowskin":"Window_WSB_message","bgPartId":"user:ua_ms7xv6db_1","framePartId":"user:ua_msfssllf_1","messageLineCount":4,"scrollBgEnabled":true,"scrollBgSpeedX":0.3,"scrollBgSpeedY":0.3,"roundBgCorners":false,"opacityGradient":{"h":[{"p":0,"a":0.54},{"p":0.55,"a":1},{"p":1,"a":0.54}]},"sceneAnim":{"in":{"move":{"direction":"bottom","distance":"screen_1_4","tween":"linear"},"delay":{"order":"none","timing":"normal"},"speed":"fast"},"out":{"move":{"direction":"bottom","distance":"screen_1_8","tween":"easeOutBack"},"delay":{"order":"none","timing":"normal"},"speed":"slow"}}};
+  var _wsp_message_element = {"key":"message","targetClass":"Window_Message","hookType":"sceneRect","x":4,"y":532,"w":1272,"h":162,"opacity":0.9803921568627451,"bgType":"window","fontSize":26,"frameVisible":true,"displayName":"Message Window","visible":true,"windowskin":"Window_WSB_message","bgPartId":"user:ua_ms7xv6db_1","framePartId":"user:ua_msfssllf_1","messageLineCount":4,"scrollBgEnabled":true,"scrollBgSpeedX":1,"scrollBgSpeedY":1,"roundBgCorners":false,"opacityGradient":{"h":[{"p":0,"a":0.4},{"p":0.55,"a":1},{"p":1,"a":0.4}]},"sceneAnim":{"in":{"move":{"direction":"bottom","distance":"screen_1_4","tween":"linear"},"delay":{"order":"none","timing":"normal"},"speed":"fast"},"out":{"move":{"direction":"bottom","distance":"screen_1_8","tween":"easeOutBack"},"delay":{"order":"none","timing":"normal"},"speed":"slow"}}};
   (function() {
     var el = _wsp_message_element;
     if (!ws_isPluginEnabled("HDLayout")) {
@@ -1517,6 +1517,8 @@
     var _wsp_message_updatePlacement = Window_Message.prototype.updatePlacement;
     Window_Message.prototype._wsp_message_original_updatePlacement = _wsp_message_updatePlacement;
     Window_Message.prototype.updatePlacement = function() {
+      _wsp_message_updatePlacement.apply(this, arguments);
+      if (false) return;
       this._positionType = $gameMessage.positionType();
       if (this._positionType === 2) {
         this.y = el.y - (Graphics.height - Graphics.boxHeight) / 2;
@@ -1549,6 +1551,7 @@
     var _wsp_nameBox_updatePlacement = WindowClass.prototype.updatePlacement;
     WindowClass.prototype._wsp_nameBox_original_updatePlacement = _wsp_nameBox_updatePlacement;
     WindowClass.prototype.updatePlacement = function() {
+      _wsp_nameBox_updatePlacement.apply(this, arguments);
       var _wsp_mx = (Graphics.width - Graphics.boxWidth) / 2;
       var _wsp_my = (Graphics.height - Graphics.boxHeight) / 2;
       var _wsp_h = el.dynamicHeight && typeof this.windowHeight === 'function' ? this.windowHeight() : el.h;
@@ -1586,7 +1589,7 @@
     };
   })();
 
-  var _wsp_choice_element = {"key":"choice","targetClass":"Window_ChoiceList","hookType":"placement","x":1088,"y":408,"w":192,"h":112,"opacity":1,"bgType":"window","fontSize":26,"frameVisible":true,"displayName":"Choice List","visible":true,"windowskin":"Window_WSB_choice","bgPartId":"user:ua_ms7xv6db_1","framePartId":"user:ua_msfssllf_1","dynamicHeight":true,"dynamicWidth":true,"scrollBgEnabled":true,"scrollBgSpeedX":0.3,"scrollBgSpeedY":-0.3,"opacityGradient":{"h":[{"p":0,"a":0.7},{"p":0.53,"a":1},{"p":1,"a":0.7}]},"itemBackground":{"v":true,"t":{"h":"#202020","a":0},"b":{"h":"#8afffd","a":0.34}}};
+  var _wsp_choice_element = {"key":"choice","targetClass":"Window_ChoiceList","hookType":"placement","x":1088,"y":408,"w":192,"h":112,"opacity":1,"bgType":"window","fontSize":26,"frameVisible":true,"displayName":"Choice List","visible":true,"windowskin":"Window_WSB_choice","bgPartId":"user:ua_ms7xv6db_1","framePartId":"user:ua_msfssllf_1","dynamicHeight":true,"dynamicWidth":true,"scrollBgEnabled":true,"scrollBgSpeedX":1,"scrollBgSpeedY":1,"opacityGradient":{"h":[{"p":0,"a":0.7},{"p":0.53,"a":1},{"p":1,"a":0.7}]},"itemBackground":{"v":true,"t":{"h":"#202020","a":0},"b":{"h":"#8afffd","a":0.47}}};
   (function() {
     var el = _wsp_choice_element;
     var WindowClass = window[el.targetClass];
@@ -1594,6 +1597,7 @@
     var _wsp_choice_updatePlacement = WindowClass.prototype.updatePlacement;
     WindowClass.prototype._wsp_choice_original_updatePlacement = _wsp_choice_updatePlacement;
     WindowClass.prototype.updatePlacement = function() {
+      _wsp_choice_updatePlacement.apply(this, arguments);
       var _wsp_mx = (Graphics.width - Graphics.boxWidth) / 2;
       var _wsp_my = (Graphics.height - Graphics.boxHeight) / 2;
       var _wsp_h = el.dynamicHeight && typeof this.windowHeight === 'function' ? this.windowHeight() : el.h;
@@ -1639,6 +1643,7 @@
     var _wsp_numberInput_updatePlacement = WindowClass.prototype.updatePlacement;
     WindowClass.prototype._wsp_numberInput_original_updatePlacement = _wsp_numberInput_updatePlacement;
     WindowClass.prototype.updatePlacement = function() {
+      _wsp_numberInput_updatePlacement.apply(this, arguments);
       var _wsp_mx = (Graphics.width - Graphics.boxWidth) / 2;
       var _wsp_my = (Graphics.height - Graphics.boxHeight) / 2;
       var _wsp_h = el.dynamicHeight && typeof this.windowHeight === 'function' ? this.windowHeight() : el.h;
@@ -1684,6 +1689,7 @@
     var _wsp_eventItem_updatePlacement = WindowClass.prototype.updatePlacement;
     WindowClass.prototype._wsp_eventItem_original_updatePlacement = _wsp_eventItem_updatePlacement;
     WindowClass.prototype.updatePlacement = function() {
+      _wsp_eventItem_updatePlacement.apply(this, arguments);
       var _wsp_mx = (Graphics.width - Graphics.boxWidth) / 2;
       var _wsp_my = (Graphics.height - Graphics.boxHeight) / 2;
       var _wsp_h = el.dynamicHeight && typeof this.windowHeight === 'function' ? this.windowHeight() : el.h;
@@ -2034,7 +2040,7 @@
     };
   })();
 
-  var WS_BG_INSET = { "Window_WSB_choice": [6, 6, 6, 6], "Window_WSB_gameEnd": [6, 6, 6, 6], "Window_WSB_gold": [6, 6, 6, 6], "Window_WSB_helpWin": [6, 6, 6, 6], "Window_WSB_itemCat": [6, 6, 6, 6], "Window_WSB_itemList": [6, 6, 6, 6], "Window_WSB_menu": [6, 6, 6, 6], "Window_WSB_message": [6, 6, 6, 6], "Window_WSB_nameBox": [6, 6, 6, 6], "Window_WSB_save": [6, 6, 6, 6], "Window_WSB_status": [6, 6, 6, 6], "Window_WSB_titleCmd": [6, 6, 6, 6] };
+  var WS_BG_INSET = { "Window_WSB_choice": [6, 6, 6, 6], "Window_WSB_gold": [6, 6, 6, 6], "Window_WSB_menu": [6, 6, 6, 6], "Window_WSB_message": [6, 6, 6, 6], "Window_WSB_nameBox": [6, 6, 6, 6], "Window_WSB_status": [6, 6, 6, 6], "Window_WSB_titleCmd": [6, 6, 6, 6] };
   function ws_bgInsetFor(skin) {
     if (!WS_BG_INSET || !skin) return null;
     var url = String(skin.url || skin._url || "");
@@ -2042,7 +2048,7 @@
     return (match && WS_BG_INSET[match[1]]) || null;
   }
 
-  var WS_BG_RADIUS = { "Window_WSB_choice": 1, "Window_WSB_gameEnd": 1, "Window_WSB_gold": 1, "Window_WSB_helpWin": 1, "Window_WSB_itemCat": 1, "Window_WSB_itemList": 1, "Window_WSB_menu": 1, "Window_WSB_message": 1, "Window_WSB_nameBox": 1, "Window_WSB_save": 1, "Window_WSB_status": 1, "Window_WSB_titleCmd": 1 };
+  var WS_BG_RADIUS = { "Window_WSB_choice": 1, "Window_WSB_gold": 1, "Window_WSB_menu": 1, "Window_WSB_message": 1, "Window_WSB_nameBox": 1, "Window_WSB_status": 1, "Window_WSB_titleCmd": 1 };
   var WS_BG_RADIUS_DEFAULT = 16;
   function ws_bgRadiusFor(skin) {
     if (!WS_BG_RADIUS || !skin) return WS_BG_RADIUS_DEFAULT;
@@ -3530,9 +3536,9 @@
   })();
 
   (function() {
-    var ws_ogByClass = {"Window_TitleCommand":{"h":[{"p":0,"a":0.6},{"p":0.513,"a":1},{"p":1,"a":0.6}]},"Window_MenuCommand":{"h":[{"p":0,"a":0.46},{"p":0.458,"a":1},{"p":1,"a":0.46}]},"Window_MenuStatus":{"h":[{"p":0,"a":0.46},{"p":0.464,"a":1},{"p":1,"a":0.46}]},"Window_Gold":{"h":[{"p":0,"a":0.46},{"p":0.464,"a":1},{"p":1,"a":0.46}]},"Window_EquipSlot":{"h":[{"p":0,"a":1},{"p":0.01,"a":1}]},"Window_Help":{"h":[{"p":0.428,"a":1},{"p":1,"a":0}]},"Window_Message":{"h":[{"p":0,"a":0.54},{"p":0.55,"a":1},{"p":1,"a":0.54}]},"Window_NameBox":{"h":[{"p":0,"a":0.7},{"p":0.562,"a":1},{"p":1,"a":0.7}]},"Window_ChoiceList":{"h":[{"p":0,"a":0.7},{"p":0.53,"a":1},{"p":1,"a":0.7}]}};
-    var ws_roundByClass = {"Window_Options":true,"Window_ItemCategory":true,"Window_SavefileList":true,"Window_ItemList":true,"Window_SkillType":true,"Window_SkillStatus":true,"Window_SkillList":true,"Window_EquipCommand":true,"Window_EquipSlot":true,"Window_EquipItem":true,"Window_EquipStatus":true,"Window_Status":true,"Window_StatusParams":true,"Window_StatusEquip":true,"Window_ShopCommand":true,"Window_ShopBuy":true,"Window_ShopSell":true,"Window_ShopNumber":true,"Window_ShopStatus":true,"Window_Base":true,"Window_Gold":true,"Window_NameBox":true,"Window_ChoiceList":true,"Window_NumberInput":true,"Window_EventItem":true,"Window_NameEdit":true,"Window_NameInput":true};
-    var ws_ogScrollByClass = {"Window_Options":{"x":0.5,"y":0.5},"Window_ItemCategory":{"x":-0.3,"y":-0.3},"Window_ItemList":{"x":0.3,"y":0.3},"Window_SkillType":{"x":0.2,"y":-0.3},"Window_SkillStatus":{"x":-0.2,"y":-0.3},"Window_SkillList":{"x":0.2,"y":0.3},"Window_EquipCommand":{"x":0.3,"y":-0.3},"Window_EquipItem":{"x":0.2,"y":0.3},"Window_EquipStatus":{"x":-0.3,"y":-0.3},"Window_Status":{"x":0.3,"y":0.3},"Window_StatusParams":{"x":-0.3,"y":0.3},"Window_StatusEquip":{"x":0.3,"y":0.3},"Window_Help":{"x":-0.3,"y":-0.3},"Window_Message":{"x":0.3,"y":0.3},"Window_NameBox":{"x":-0.3,"y":-0.3},"Window_ChoiceList":{"x":0.3,"y":-0.3}};
+    var ws_ogByClass = {"Window_TitleCommand":{"h":[{"p":0,"a":0.6},{"p":0.513,"a":1},{"p":1,"a":0.6}]},"Window_MenuCommand":{"h":[{"p":0,"a":0.46},{"p":0.458,"a":1},{"p":1,"a":0.46}]},"Window_MenuStatus":{"h":[{"p":0,"a":0.46},{"p":0.464,"a":1},{"p":1,"a":0.46}]},"Window_Gold":{"h":[{"p":0,"a":0.46},{"p":0.464,"a":1},{"p":1,"a":0.46}]},"Window_EquipSlot":{"h":[{"p":0,"a":1},{"p":0.01,"a":1}]},"Window_Help":{"h":[{"p":0.428,"a":1},{"p":1,"a":0}]},"Window_Message":{"h":[{"p":0,"a":0.4},{"p":0.55,"a":1},{"p":1,"a":0.4}]},"Window_NameBox":{"h":[{"p":0,"a":0.7},{"p":0.562,"a":1},{"p":1,"a":0.7}]},"Window_ChoiceList":{"h":[{"p":0,"a":0.7},{"p":0.53,"a":1},{"p":1,"a":0.7}]}};
+    var ws_roundByClass = {"Window_Options":true,"Window_ItemCategory":true,"Window_SavefileList":true,"Window_ItemList":true,"Window_SkillType":true,"Window_SkillStatus":true,"Window_SkillList":true,"Window_EquipCommand":true,"Window_EquipSlot":true,"Window_EquipItem":true,"Window_EquipStatus":true,"Window_Status":true,"Window_StatusParams":true,"Window_StatusEquip":true,"Window_GameEnd":true,"Window_ShopCommand":true,"Window_ShopBuy":true,"Window_ShopSell":true,"Window_ShopNumber":true,"Window_ShopStatus":true,"Window_Base":true,"Window_Gold":true,"Window_NameBox":true,"Window_ChoiceList":true,"Window_NumberInput":true,"Window_EventItem":true,"Window_NameEdit":true,"Window_NameInput":true};
+    var ws_ogScrollByClass = {"Window_Help":{"x":-0.3,"y":-0.3},"Window_Message":{"x":1,"y":1},"Window_NameBox":{"x":-0.3,"y":-0.3},"Window_ChoiceList":{"x":1,"y":1}};
     var ws_roundRadius = 16;
     if (typeof Window === "undefined" || !Window.prototype) return;
     if (typeof Bitmap === "undefined") return;
@@ -3848,69 +3854,77 @@
       };
     })();
 
-    var _wsp_og_orig_update = Window.prototype.update;
-    Window.prototype.update = function() {
-      _wsp_og_orig_update.apply(this, arguments);
+    function ws_ogUpdateWindow(win) {
       try {
-        if (this._wspSplitContainer) return;
-        var nm = this.constructor && this.constructor.name;
-        var og = this._wsbOg || ws_ogByClass[nm];
+        if (win._wspSplitContainer) return;
+        if (typeof Graphics !== "undefined" && typeof Graphics.frameCount === "number") {
+          if (win._wsbOgTickFrame === Graphics.frameCount) return;
+          win._wsbOgTickFrame = Graphics.frameCount;
+        }
+        var nm = win.constructor && win.constructor.name;
+        var og = win._wsbOg || ws_ogByClass[nm];
         var round = !!ws_roundByClass[nm];
         if (!og && !round) return;
-        var w = Math.round(this.width || this._width || 0);
-        var h = Math.round(this.height || this._height || 0);
+        var w = Math.round(win.width || win._width || 0);
+        var h = Math.round(win.height || win._height || 0);
         if (w <= 0 || h <= 0) return;
         var sc = ws_ogScrollByClass[nm];
-        if (!sc && this._wsbOg && this._wsbScrollBg) {
-          var isc = this._wsbScrollBg;
+        if (!sc && win._wsbOg && win._wsbScrollBg) {
+          var isc = win._wsbScrollBg;
           var ix = typeof isc.x === "number" ? isc.x : 0;
           var iy = typeof isc.y === "number" ? isc.y : 0;
           if (ix !== 0 || iy !== 0) sc = { x: ix, y: iy };
         }
-        var scSkin = this._windowskin;
+        var scSkin = win._windowskin;
         var scReady = scSkin && (typeof scSkin.isReady !== "function" || scSkin.isReady());
-        var scBack = this._backSprite || this._windowBackSprite;
-        if (sc && scReady && scBack && this.visible && this.openness > 0) {
-          this._wsbOgScrollX = (this._wsbOgScrollX || 0) + sc.x;
-          this._wsbOgScrollY = (this._wsbOgScrollY || 0) + sc.y;
+        var scBack = win._backSprite || win._windowBackSprite;
+        if (sc && scReady && scBack && win.visible && win.openness > 0) {
+          win._wsbOgScrollX = (win._wsbOgScrollX || 0) + sc.x;
+          win._wsbOgScrollY = (win._wsbOgScrollY || 0) + sc.y;
           var scPd = scSkin.height >= 384
             ? (scSkin._wsbTilePd || { x: 192, y: 192 })
             : { x: 96, y: 96 };
-          var scOx = Math.floor(ws_ogWrap(this._wsbOgScrollX, scPd.x));
-          var scOy = Math.floor(ws_ogWrap(this._wsbOgScrollY, scPd.y));
-          var scSize = ws_ogBackSize(this, scSkin);
+          var scOx = Math.floor(ws_ogWrap(win._wsbOgScrollX, scPd.x));
+          var scOy = Math.floor(ws_ogWrap(win._wsbOgScrollY, scPd.y));
+          var scSize = ws_ogBackSize(win, scSkin);
           var scKey = scSize[0] + "x" + scSize[1];
-          if (scOx !== this._wsbOgBakedOx || scOy !== this._wsbOgBakedOy ||
-              scKey !== this._wsbOgBakedKey || scBack.bitmap !== this._wsbOgBakedBitmap) {
-            ws_ogBake(this, og, round);
+          if (scOx !== win._wsbOgBakedOx || scOy !== win._wsbOgBakedOy ||
+              scKey !== win._wsbOgBakedKey || scBack.bitmap !== win._wsbOgBakedBitmap) {
+            ws_ogBake(win, og, round);
           }
         } else {
-          var key = this._backSprite
-            ? (function(win) { var s = ws_ogBackSize(win, win._windowskin); return s[0] + "x" + s[1]; })(this)
-            : (this._windowBackSprite && this._windowBackSprite.bitmap
-                ? (this._windowBackSprite.bitmap.width + "x" + this._windowBackSprite.bitmap.height)
+          var key = win._backSprite
+            ? (function(w2) { var s = ws_ogBackSize(w2, w2._windowskin); return s[0] + "x" + s[1]; })(win)
+            : (win._windowBackSprite && win._windowBackSprite.bitmap
+                ? (win._windowBackSprite.bitmap.width + "x" + win._windowBackSprite.bitmap.height)
                 : null);
-          var backBmp = this._backSprite
-            ? this._backSprite.bitmap
-            : (this._windowBackSprite ? this._windowBackSprite.bitmap : null);
-          if (key !== null && (this._wsbOgBakedKey !== key || backBmp !== this._wsbOgBakedBitmap)) {
-            ws_ogBake(this, og, round);
+          var backBmp = win._backSprite
+            ? win._backSprite.bitmap
+            : (win._windowBackSprite ? win._windowBackSprite.bitmap : null);
+          if (key !== null && (win._wsbOgBakedKey !== key || backBmp !== win._wsbOgBakedBitmap)) {
+            ws_ogBake(win, og, round);
           }
         }
         if (og) {
-          var fsU = this._frameSprite || this._windowFrameSprite;
-          if (fsU && this._wsbOgFrameBakedKey !== (Math.max(1, w) + "x" + Math.max(1, h))) {
-            ws_ogBakeFrame(this, og);
+          var fsU = win._frameSprite || win._windowFrameSprite;
+          if (fsU && win._wsbOgFrameBakedKey !== (Math.max(1, w) + "x" + Math.max(1, h))) {
+            ws_ogBakeFrame(win, og);
           }
         }
       } catch (err) { /* ignore */ }
+    }
+
+    var _wsp_og_orig_update = Window.prototype.update;
+    Window.prototype.update = function() {
+      _wsp_og_orig_update.apply(this, arguments);
+      ws_ogUpdateWindow(this);
     };
   })();
 
   (function() {
     if (typeof Window_Selectable === "undefined" || !Window_Selectable.prototype) return;
     if (typeof Window_Selectable.prototype.drawItemBackground !== "function") return;
-    var ws_ibByClass = {"Window_TitleCommand":{"v":true,"c1":"rgba(32, 32, 32, 0)","c2":"rgba(122, 255, 253, 0.39)"},"Window_MenuCommand":{"v":true,"c1":"rgba(32, 32, 32, 0)","c2":"rgba(139, 235, 254, 0.19)"},"Window_MenuStatus":{"v":true,"c1":"rgba(255, 179, 179, 0.72)","c2":"rgba(169, 254, 244, 0.65)"},"Window_Options":{"v":false,"c1":"rgba(32, 32, 32, 0.5)","c2":"rgba(0, 0, 0, 0.5)"},"Window_ItemCategory":{"v":true,"c1":"rgba(32, 32, 32, 0)","c2":"rgba(154, 237, 254, 0.7)"},"Window_SavefileList":{"v":true,"c1":"rgba(32, 32, 32, 0)","c2":"rgba(102, 255, 252, 0.44)"},"Window_ItemList":{"v":true,"c1":"rgba(32, 32, 32, 0)","c2":"rgba(154, 237, 254, 0.7)"},"Window_SkillType":{"v":true,"c1":"rgba(32, 32, 32, 0)","c2":"rgba(163, 253, 255, 0.56)"},"Window_SkillStatus":{"v":true,"c1":"rgba(32, 32, 32, 0)","c2":"rgba(163, 253, 255, 0.56)"},"Window_SkillList":{"v":true,"c1":"rgba(32, 32, 32, 0)","c2":"rgba(163, 253, 255, 0.56)"},"Window_EquipCommand":{"v":true,"c1":"rgba(32, 32, 32, 0)","c2":"rgba(148, 237, 255, 0.61)"},"Window_EquipSlot":{"v":true,"c1":"rgba(32, 32, 32, 0)","c2":"rgba(163, 255, 249, 0.8)"},"Window_GameEnd":{"v":true,"c1":"rgba(32, 32, 32, 0)","c2":"rgba(148, 253, 255, 0.46)"},"Window_ActorCommand":{"v":true,"c1":"rgba(32, 32, 32, 0)","c2":"rgba(154, 234, 254, 0.63)"},"Window_BattleEnemy":{"v":true,"c1":"rgba(32, 32, 32, 0)","c2":"rgba(148, 243, 255, 0.5)"},"Window_BattleSkill":{"v":true,"c1":"rgba(32, 32, 32, 0)","c2":"rgba(158, 255, 253, 0.56)"},"Window_BattleItem":{"v":true,"c1":"rgba(32, 32, 32, 0)","c2":"rgba(180, 254, 249, 0.63)"},"Window_Help":{"v":true,"c1":"rgba(32, 32, 32, 0)","c2":"rgba(158, 255, 253, 0.56)"},"Window_ChoiceList":{"v":true,"c1":"rgba(32, 32, 32, 0)","c2":"rgba(138, 255, 253, 0.34)"}};
+    var ws_ibByClass = {"Window_TitleCommand":{"v":true,"c1":"rgba(32, 32, 32, 0)","c2":"rgba(122, 255, 253, 0.39)"},"Window_MenuCommand":{"v":true,"c1":"rgba(32, 32, 32, 0)","c2":"rgba(139, 235, 254, 0.19)"},"Window_MenuStatus":{"v":true,"c1":"rgba(255, 179, 179, 0.72)","c2":"rgba(169, 254, 244, 0.65)"},"Window_Options":{"v":false,"c1":"rgba(32, 32, 32, 0.5)","c2":"rgba(0, 0, 0, 0.5)"},"Window_ItemCategory":{"v":true,"c1":"rgba(32, 32, 32, 0)","c2":"rgba(154, 237, 254, 0.78)"},"Window_ItemList":{"v":true,"c1":"rgba(32, 32, 32, 0)","c2":"rgba(179, 242, 255, 0.71)"},"Window_SkillType":{"v":true,"c1":"rgba(32, 32, 32, 0)","c2":"rgba(163, 253, 255, 0.56)"},"Window_SkillStatus":{"v":true,"c1":"rgba(32, 32, 32, 0)","c2":"rgba(163, 253, 255, 0.56)"},"Window_SkillList":{"v":true,"c1":"rgba(32, 32, 32, 0)","c2":"rgba(163, 253, 255, 0.56)"},"Window_EquipCommand":{"v":true,"c1":"rgba(32, 32, 32, 0)","c2":"rgba(148, 237, 255, 0.61)"},"Window_EquipSlot":{"v":true,"c1":"rgba(32, 32, 32, 0)","c2":"rgba(163, 255, 249, 0.8)"},"Window_ActorCommand":{"v":true,"c1":"rgba(32, 32, 32, 0)","c2":"rgba(154, 234, 254, 0.63)"},"Window_BattleEnemy":{"v":true,"c1":"rgba(32, 32, 32, 0)","c2":"rgba(148, 243, 255, 0.5)"},"Window_BattleSkill":{"v":true,"c1":"rgba(32, 32, 32, 0)","c2":"rgba(158, 255, 253, 0.56)"},"Window_BattleItem":{"v":true,"c1":"rgba(32, 32, 32, 0)","c2":"rgba(180, 254, 249, 0.63)"},"Window_Help":{"v":true,"c1":"rgba(32, 32, 32, 0)","c2":"rgba(158, 255, 253, 0.56)"},"Window_ChoiceList":{"v":true,"c1":"rgba(32, 32, 32, 0)","c2":"rgba(138, 255, 253, 0.47)"}};
     var _wsp_ib_orig = Window_Selectable.prototype.drawItemBackground;
     Window_Selectable.prototype.drawItemBackground = function(index) {
       var ib = ws_ibByClass[this.constructor && this.constructor.name];
@@ -3932,7 +3946,7 @@
   (function() {
     if (typeof Window_Selectable === "undefined" || !Window_Selectable.prototype) return;
     if (typeof Window_Selectable.prototype.update !== "function") return;
-    var WSB_RAISE_CLASSES = {"Window_Options":true,"Window_ItemCategory":true,"Window_SavefileList":true,"Window_ItemList":true,"Window_SkillType":true,"Window_SkillStatus":true,"Window_SkillList":true,"Window_EquipCommand":true,"Window_EquipSlot":true,"Window_EquipItem":true,"Window_EquipStatus":true,"Window_Status":true,"Window_StatusParams":true,"Window_StatusEquip":true,"Window_ShopCommand":true,"Window_ShopBuy":true,"Window_ShopSell":true,"Window_ShopNumber":true,"Window_ShopStatus":true,"Window_Base":true,"Window_Gold":true,"Window_NameBox":true,"Window_ChoiceList":true,"Window_NumberInput":true,"Window_EventItem":true,"Window_NameEdit":true,"Window_NameInput":true};
+    var WSB_RAISE_CLASSES = {"Window_Options":true,"Window_ItemCategory":true,"Window_SavefileList":true,"Window_ItemList":true,"Window_SkillType":true,"Window_SkillStatus":true,"Window_SkillList":true,"Window_EquipCommand":true,"Window_EquipSlot":true,"Window_EquipItem":true,"Window_EquipStatus":true,"Window_Status":true,"Window_StatusParams":true,"Window_StatusEquip":true,"Window_GameEnd":true,"Window_ShopCommand":true,"Window_ShopBuy":true,"Window_ShopSell":true,"Window_ShopNumber":true,"Window_ShopStatus":true,"Window_Base":true,"Window_Gold":true,"Window_NameBox":true,"Window_ChoiceList":true,"Window_NumberInput":true,"Window_EventItem":true,"Window_NameEdit":true,"Window_NameInput":true};
     function ws_raiseManaged(w) {
       if (!w || !w.constructor) return false;
       if (w._wsbRaiseOptIn === true) return true;
@@ -3993,7 +4007,7 @@
   (function() {
     if (typeof WindowLayer === "undefined" || !WindowLayer.prototype) return;
     if (typeof WindowLayer.prototype.render !== "function") return;
-    var WSB_BLEND_CLASSES = {"Window_Options":true,"Window_ItemCategory":true,"Window_SavefileList":true,"Window_ItemList":true,"Window_SkillType":true,"Window_SkillStatus":true,"Window_SkillList":true,"Window_EquipCommand":true,"Window_EquipSlot":true,"Window_EquipItem":true,"Window_EquipStatus":true,"Window_Status":true,"Window_StatusParams":true,"Window_StatusEquip":true,"Window_ShopCommand":true,"Window_ShopBuy":true,"Window_ShopSell":true,"Window_ShopNumber":true,"Window_ShopStatus":true,"Window_Base":true,"Window_Gold":true,"Window_NameBox":true,"Window_ChoiceList":true,"Window_NumberInput":true,"Window_EventItem":true,"Window_NameEdit":true,"Window_NameInput":true};
+    var WSB_BLEND_CLASSES = {"Window_Options":true,"Window_ItemCategory":true,"Window_SavefileList":true,"Window_ItemList":true,"Window_SkillType":true,"Window_SkillStatus":true,"Window_SkillList":true,"Window_EquipCommand":true,"Window_EquipSlot":true,"Window_EquipItem":true,"Window_EquipStatus":true,"Window_Status":true,"Window_StatusParams":true,"Window_StatusEquip":true,"Window_GameEnd":true,"Window_ShopCommand":true,"Window_ShopBuy":true,"Window_ShopSell":true,"Window_ShopNumber":true,"Window_ShopStatus":true,"Window_Base":true,"Window_Gold":true,"Window_NameBox":true,"Window_ChoiceList":true,"Window_NumberInput":true,"Window_EventItem":true,"Window_NameEdit":true,"Window_NameInput":true};
     var _wsp_wl_origRender = WindowLayer.prototype.render;
     function ws_wlManaged(win) {
       if (!win || !win.constructor) return false;
@@ -4078,7 +4092,7 @@
 
   window.$_wsbRuntime = {
     windowElements: ws_windowElements,
-    pluginParams: {"ws_windowElements":[{"key":"titleCmd","targetClass":"Window_TitleCommand","hookType":"sceneRect","x":1017,"y":420,"w":256,"h":157,"opacity":1,"bgType":"window","fontSize":26,"frameVisible":true,"displayName":"Title Command","visible":true,"windowskin":"Window_WSB_titleCmd","bgPartId":"user:ua_ms7xv6db_1","framePartId":"user:ua_msfssllf_1","roundBgCorners":false,"confirmEffect":{"type":"cursorGlow"},"opacityGradient":{"h":[{"p":0,"a":0.6},{"p":0.513,"a":1},{"p":1,"a":0.6}]},"itemBackground":{"v":true,"t":{"h":"#202020","a":0},"b":{"h":"#7afffd","a":0.39}}},{"key":"menu","targetClass":"Window_MenuCommand","hookType":"sceneRect","x":8,"y":212,"w":228,"h":335,"opacity":1,"bgType":"window","fontSize":26,"frameVisible":true,"displayName":"Menu Command","visible":true,"windowskin":"Window_WSB_menu","bgPartId":"user:ua_ms7xv6db_1","framePartId":"user:ua_msfssllf_1","roundBgCorners":false,"confirmEffect":{"type":"ripple","amp":20},"opacityGradient":{"h":[{"p":0,"a":0.46},{"p":0.458,"a":1},{"p":1,"a":0.46}]},"itemBackground":{"v":true,"t":{"h":"#202020","a":0},"b":{"h":"#8bebfe","a":0.19}}},{"key":"status","targetClass":"Window_MenuStatus","hookType":"sceneRect","x":409,"y":222,"w":510,"h":294,"opacity":0.9803921568627451,"bgType":"window","fontSize":26,"frameVisible":true,"displayName":"Menu Status","visible":true,"windowskin":"Window_WSB_status","bgPartId":"user:ua_ms7xv6db_1","framePartId":"user:ua_msfssllf_1","roundBgCorners":false,"confirmEffect":{"type":"cursorGlow"},"opacityGradient":{"h":[{"p":0,"a":0.46},{"p":0.464,"a":1},{"p":1,"a":0.46}]},"itemBackground":{"v":true,"t":{"h":"#ffb3b3","a":0.72},"b":{"h":"#a9fef4","a":0.65}}},{"key":"gold","targetClass":"Window_Gold","hookType":"sceneRect","x":8,"y":650,"w":223,"h":57,"opacity":1,"bgType":"window","fontSize":26,"frameVisible":true,"displayName":"Gold Window","visible":true,"windowskin":"Window_WSB_gold","bgPartId":"user:ua_ms7xv6db_1","framePartId":"user:ua_msfssllf_1","roundBgCorners":false,"opacityGradient":{"h":[{"p":0,"a":0.46},{"p":0.464,"a":1},{"p":1,"a":0.46}]}},{"key":"options","targetClass":"Window_Options","hookType":"sceneRect","x":440,"y":194,"w":400,"h":332,"opacity":1,"bgType":"window","fontSize":26,"frameVisible":true,"displayName":"Options","visible":true,"windowskin":"Window_WSB_options","bgPartId":"user:ua_ms7xv6db_1","framePartId":"000","scrollBgEnabled":true,"scrollBgSpeedX":0.5,"scrollBgSpeedY":0.5,"itemBackground":{"v":false,"t":{"h":"#202020","a":0.5},"b":{"h":"#000000","a":0.5}}},{"key":"itemCat","targetClass":"Window_ItemCategory","hookType":"sceneRect","x":0,"y":154,"w":1272,"h":68,"opacity":1,"bgType":"window","fontSize":26,"frameVisible":true,"displayName":"Item Category","visible":true,"windowskin":"Window_WSB_itemCat","bgPartId":"user:ua_ms7xv6db_1","framePartId":"user:ua_msfssllf_1","scrollBgEnabled":true,"scrollBgSpeedX":-0.3,"scrollBgSpeedY":-0.3,"itemBackground":{"v":true,"t":{"h":"#202020","a":0},"b":{"h":"#9aedfe","a":0.7}}},{"key":"save","targetClass":"Window_SavefileList","hookType":"sceneRect","x":4,"y":100,"w":1272,"h":616,"opacity":1,"bgType":"window","fontSize":26,"frameVisible":true,"displayName":"Savefile List","visible":true,"windowskin":"Window_WSB_save","bgPartId":"user:ua_ms7xv6db_1","framePartId":"user:ua_msfssllf_1","itemBackground":{"v":true,"t":{"h":"#202020","a":0},"b":{"h":"#66fffc","a":0.44}}},{"key":"itemList","targetClass":"Window_ItemList","hookType":"sceneRect","x":4,"y":224,"w":1272,"h":496,"opacity":1,"bgType":"window","fontSize":26,"frameVisible":true,"displayName":"Item List","visible":true,"windowskin":"Window_WSB_itemList","bgPartId":"user:ua_ms7xv6db_1","framePartId":"user:ua_msfssllf_1","scrollBgEnabled":true,"scrollBgSpeedX":0.3,"scrollBgSpeedY":0.3,"itemBackground":{"v":true,"t":{"h":"#202020","a":0},"b":{"h":"#9aedfe","a":0.7}}},{"key":"skillType","targetClass":"Window_SkillType","hookType":"sceneRect","x":1036,"y":56,"w":240,"h":156,"opacity":1,"bgType":"window","fontSize":26,"frameVisible":true,"displayName":"Skill Type","visible":true,"windowskin":"Window_WSB_skillType","bgPartId":"user:ua_ms7xv6db_1","framePartId":"000","scrollBgEnabled":true,"scrollBgSpeedX":0.2,"scrollBgSpeedY":-0.3,"itemBackground":{"v":true,"t":{"h":"#202020","a":0},"b":{"h":"#a3fdff","a":0.56}}},{"key":"skillStatus","targetClass":"Window_SkillStatus","hookType":"sceneRect","x":4,"y":56,"w":1032,"h":156,"opacity":1,"bgType":"window","fontSize":26,"frameVisible":true,"displayName":"Skill Status","visible":true,"windowskin":"Window_WSB_skillStatus","bgPartId":"user:ua_ms7xv6db_1","framePartId":"000","scrollBgEnabled":true,"scrollBgSpeedX":-0.2,"scrollBgSpeedY":-0.3,"itemBackground":{"v":true,"t":{"h":"#202020","a":0},"b":{"h":"#a3fdff","a":0.56}}},{"key":"skillList","targetClass":"Window_SkillList","hookType":"sceneRect","x":4,"y":212,"w":1272,"h":408,"opacity":1,"bgType":"window","fontSize":26,"frameVisible":true,"displayName":"Skill List","visible":true,"windowskin":"Window_WSB_skillList","bgPartId":"user:ua_ms7xv6db_1","framePartId":"000","scrollBgEnabled":true,"scrollBgSpeedX":0.2,"scrollBgSpeedY":0.3,"itemBackground":{"v":true,"t":{"h":"#202020","a":0},"b":{"h":"#a3fdff","a":0.56}}},{"key":"equipCmd","targetClass":"Window_EquipCommand","hookType":"sceneRect","x":316,"y":156,"w":960,"h":68,"opacity":1,"bgType":"window","fontSize":26,"frameVisible":true,"displayName":"Equip Command","visible":true,"windowskin":"Window_WSB_equipCmd","bgPartId":"user:ua_ms7xv6db_1","framePartId":"000","scrollBgEnabled":true,"scrollBgSpeedX":0.3,"scrollBgSpeedY":-0.3,"itemBackground":{"v":true,"t":{"h":"#202020","a":0},"b":{"h":"#94edff","a":0.61}}},{"key":"equipSlot","targetClass":"Window_EquipSlot","hookType":"sceneRect","x":316,"y":230,"w":956,"h":149,"opacity":1,"bgType":"window","fontSize":26,"frameVisible":true,"displayName":"Equip Slot","visible":true,"windowskin":"Window_WSB_equipSlot","bgPartId":"user:ua_ms7xv6db_1","framePartId":"000","opacityGradient":{"h":[{"p":0,"a":1},{"p":0.01,"a":1}]},"itemBackground":{"v":true,"t":{"h":"#202020","a":0},"b":{"h":"#a3fff9","a":0.8}}},{"key":"equipItem","targetClass":"Window_EquipItem","hookType":"sceneRect","x":316,"y":230,"w":960,"h":496,"opacity":1,"bgType":"window","fontSize":26,"frameVisible":true,"displayName":"Equip Item List","visible":true,"windowskin":"Window_WSB_equipItem","bgPartId":"user:ua_ms7xv6db_1","framePartId":"000","scrollBgEnabled":true,"scrollBgSpeedX":0.2,"scrollBgSpeedY":0.3},{"key":"equipStatus","targetClass":"Window_EquipStatus","hookType":"sceneRect","x":4,"y":151,"w":312,"h":564,"opacity":1,"bgType":"window","fontSize":26,"frameVisible":true,"displayName":"Equip Status","visible":true,"windowskin":"Window_WSB_equipStatus","bgPartId":"user:ua_ms7xv6db_1","framePartId":"000","scrollBgEnabled":true,"scrollBgSpeedX":-0.3,"scrollBgSpeedY":-0.3},{"key":"statusDetail","targetClass":"Window_Status","hookType":"sceneRect","x":4,"y":56,"w":1272,"h":324,"opacity":1,"bgType":"window","fontSize":26,"frameVisible":true,"displayName":"Status Detail","visible":true,"windowskin":"Window_WSB_statusDetail","bgPartId":"user:ua_ms7xv6db_1","framePartId":"000","scrollBgEnabled":true,"scrollBgSpeedX":0.3,"scrollBgSpeedY":0.3},{"key":"statusParams","targetClass":"Window_StatusParams","hookType":"sceneRect","x":4,"y":380,"w":300,"h":240,"opacity":1,"bgType":"window","fontSize":26,"frameVisible":true,"displayName":"Status Params","visible":true,"windowskin":"Window_WSB_statusParams","bgPartId":"user:ua_ms7xv6db_1","framePartId":"000","scrollBgEnabled":true,"scrollBgSpeedX":-0.3,"scrollBgSpeedY":0.3},{"key":"statusEquip","targetClass":"Window_StatusEquip","hookType":"sceneRect","x":304,"y":380,"w":972,"h":240,"opacity":1,"bgType":"window","fontSize":26,"frameVisible":true,"displayName":"Status Equipment","visible":true,"windowskin":"Window_WSB_statusEquip","bgPartId":"user:ua_ms7xv6db_1","framePartId":"000","scrollBgEnabled":true,"scrollBgSpeedX":0.3,"scrollBgSpeedY":0.3},{"key":"gameEnd","targetClass":"Window_GameEnd","hookType":"sceneRect","x":414,"y":319,"w":430,"h":101,"opacity":1,"bgType":"window","fontSize":26,"frameVisible":true,"displayName":"Game End Command","visible":true,"windowskin":"Window_WSB_gameEnd","bgPartId":"user:ua_ms7xv6db_1","framePartId":"user:ua_msfssllf_1","scrollBgEnabled":true,"scrollBgSpeedX":0.3,"scrollBgSpeedY":0.3,"roundBgCorners":false,"itemBackground":{"v":true,"t":{"h":"#202020","a":0},"b":{"h":"#94fdff","a":0.46}}},{"key":"shopCmd","targetClass":"Window_ShopCommand","hookType":"sceneRect","x":4,"y":56,"w":1032,"h":68,"opacity":1,"bgType":"window","fontSize":26,"frameVisible":true,"displayName":"Shop Command","visible":true,"windowskin":"Window"},{"key":"shopBuy","targetClass":"Window_ShopBuy","hookType":"sceneRect","x":4,"y":124,"w":920,"h":496,"opacity":1,"bgType":"window","fontSize":26,"frameVisible":true,"displayName":"Shop Buy","visible":true,"windowskin":"Window"},{"key":"shopSell","targetClass":"Window_ShopSell","hookType":"sceneRect","x":4,"y":192,"w":1272,"h":428,"opacity":1,"bgType":"window","fontSize":26,"frameVisible":true,"displayName":"Shop Sell","visible":true,"windowskin":"Window"},{"key":"shopNumber","targetClass":"Window_ShopNumber","hookType":"sceneRect","x":4,"y":124,"w":920,"h":496,"opacity":1,"bgType":"window","fontSize":26,"frameVisible":true,"displayName":"Shop Number","visible":true,"windowskin":"Window"},{"key":"shopStatus","targetClass":"Window_ShopStatus","hookType":"sceneRect","x":924,"y":124,"w":352,"h":496,"opacity":1,"bgType":"window","fontSize":26,"frameVisible":true,"displayName":"Shop Status","visible":true,"windowskin":"Window"},{"key":"shopDummy","targetClass":"Window_Base","hookType":"sceneRect","x":4,"y":124,"w":1272,"h":496,"opacity":1,"bgType":"window","fontSize":26,"frameVisible":true,"displayName":"Shop Dummy","visible":true,"windowskin":"Window"},{"key":"shopGold","targetClass":"Window_Gold","hookType":"sceneRect","x":1036,"y":56,"w":240,"h":68,"opacity":1,"bgType":"window","fontSize":26,"frameVisible":true,"displayName":"Shop Gold","visible":true,"windowskin":"Window"},{"key":"battle","targetClass":"Window_BattleStatus","hookType":"sceneRect","x":0,"y":504,"w":537,"h":200,"opacity":1,"bgType":"window","fontSize":26,"frameVisible":true,"displayName":"Battle Status","visible":true,"windowskin":"Window_WSB_battle","bgPartId":"000","framePartId":"000","roundBgCorners":false,"confirmEffect":{"type":"cursorGlow","dur":21},"backLayer":{"image":"Transition test"},"sceneAnim":{"in":{"move":{"direction":"outer","distance":"screen_1_4","tween":"easeOutBack"},"delay":{"order":"none","timing":"normal"},"speed":"normal"}}},{"key":"partyCmd","targetClass":"Window_PartyCommand","hookType":"sceneRect","x":414,"y":320,"w":452,"h":200,"opacity":1,"bgType":"window","fontSize":26,"frameVisible":true,"displayName":"Party Command","visible":true,"windowskin":"Window_WSB_partyCmd","bgPartId":"user:ua_ms7xv6db_1","framePartId":"000","roundBgCorners":false,"animation":{"idle":{"type":"bob","amp":2}},"confirmEffect":{"type":"cursorGlow","dur":21}},{"key":"actorCmd","targetClass":"Window_ActorCommand","hookType":"sceneRect","x":0,"y":444,"w":240,"h":271,"opacity":1,"bgType":"window","fontSize":26,"frameVisible":true,"displayName":"Actor Command","visible":true,"windowskin":"Window_WSB_actorCmd","bgPartId":"user:ua_ms7xv6db_1","framePartId":"000","roundBgCorners":false,"itemBackground":{"v":true,"t":{"h":"#202020","a":0},"b":{"h":"#9aeafe","a":0.63}}},{"key":"enemySel","targetClass":"Window_BattleEnemy","hookType":"sceneRect","x":1020,"y":383.5,"w":260,"h":89,"opacity":1,"bgType":"window","fontSize":26,"frameVisible":true,"displayName":"Battle Enemy","visible":false,"windowskin":"Window_WSB_enemySel","bgPartId":"user:ua_ms7xv6db_1","framePartId":"000","roundBgCorners":false,"itemBackground":{"v":true,"t":{"h":"#202020","a":0},"b":{"h":"#94f3ff","a":0.5}}},{"key":"skillSel","targetClass":"Window_BattleSkill","hookType":"sceneRect","x":4,"y":520,"w":1272,"h":200,"opacity":1,"bgType":"window","fontSize":26,"frameVisible":true,"displayName":"Battle Skill","visible":false,"windowskin":"Window_WSB_skillSel","bgPartId":"user:ua_ms7xv6db_1","framePartId":"000","scrollBgEnabled":true,"scrollBgSpeedX":1,"scrollBgSpeedY":1,"roundBgCorners":false,"itemBackground":{"v":true,"t":{"h":"#202020","a":0},"b":{"h":"#9efffd","a":0.56}}},{"key":"itemSel","targetClass":"Window_BattleItem","hookType":"sceneRect","x":4,"y":516,"w":1272,"h":200,"opacity":1,"bgType":"window","fontSize":26,"frameVisible":true,"displayName":"Battle Item","visible":false,"windowskin":"Window_WSB_itemSel","bgPartId":"user:ua_ms7xv6db_1","framePartId":"000","scrollBgEnabled":true,"scrollBgSpeedX":1,"scrollBgSpeedY":1,"roundBgCorners":false,"itemBackground":{"v":true,"t":{"h":"#202020","a":0},"b":{"h":"#b4fef9","a":0.63}}},{"key":"helpWin","targetClass":"Window_Help","hookType":"sceneRect","x":4,"y":4,"w":1272,"h":104,"opacity":1,"bgType":"window","fontSize":26,"frameVisible":true,"displayName":"Help Window","visible":true,"windowskin":"Window_WSB_helpWin","bgPartId":"user:ua_ms7xv6db_1","framePartId":"user:ua_msfssllf_1","scrollBgEnabled":true,"scrollBgSpeedX":-0.3,"scrollBgSpeedY":-0.3,"roundBgCorners":false,"opacityGradient":{"h":[{"p":0.428,"a":1},{"p":1,"a":0}]},"itemBackground":{"v":true,"t":{"h":"#202020","a":0},"b":{"h":"#9efffd","a":0.56}}},{"key":"message","targetClass":"Window_Message","hookType":"sceneRect","x":4,"y":532,"w":1272,"h":162,"opacity":0.9803921568627451,"bgType":"window","fontSize":26,"frameVisible":true,"displayName":"Message Window","visible":true,"windowskin":"Window_WSB_message","bgPartId":"user:ua_ms7xv6db_1","framePartId":"user:ua_msfssllf_1","messageLineCount":4,"scrollBgEnabled":true,"scrollBgSpeedX":0.3,"scrollBgSpeedY":0.3,"roundBgCorners":false,"opacityGradient":{"h":[{"p":0,"a":0.54},{"p":0.55,"a":1},{"p":1,"a":0.54}]},"sceneAnim":{"in":{"move":{"direction":"bottom","distance":"screen_1_4","tween":"linear"},"delay":{"order":"none","timing":"normal"},"speed":"fast"},"out":{"move":{"direction":"bottom","distance":"screen_1_8","tween":"easeOutBack"},"delay":{"order":"none","timing":"normal"},"speed":"slow"}}},{"key":"nameBox","targetClass":"Window_NameBox","hookType":"placement","x":4,"y":466,"w":240,"h":60,"opacity":1,"bgType":"window","fontSize":26,"frameVisible":true,"displayName":"Name Box","visible":true,"windowskin":"Window_WSB_nameBox","bgPartId":"user:ua_ms7xv6db_1","framePartId":"user:ua_msfssllf_1","dynamicWidth":true,"scrollBgEnabled":true,"scrollBgSpeedX":-0.3,"scrollBgSpeedY":-0.3,"opacityGradient":{"h":[{"p":0,"a":0.7},{"p":0.562,"a":1},{"p":1,"a":0.7}]}},{"key":"choice","targetClass":"Window_ChoiceList","hookType":"placement","x":1088,"y":408,"w":192,"h":112,"opacity":1,"bgType":"window","fontSize":26,"frameVisible":true,"displayName":"Choice List","visible":true,"windowskin":"Window_WSB_choice","bgPartId":"user:ua_ms7xv6db_1","framePartId":"user:ua_msfssllf_1","dynamicHeight":true,"dynamicWidth":true,"scrollBgEnabled":true,"scrollBgSpeedX":0.3,"scrollBgSpeedY":-0.3,"opacityGradient":{"h":[{"p":0,"a":0.7},{"p":0.53,"a":1},{"p":1,"a":0.7}]},"itemBackground":{"v":true,"t":{"h":"#202020","a":0},"b":{"h":"#8afffd","a":0.34}}},{"key":"numberInput","targetClass":"Window_NumberInput","hookType":"placement","x":436,"y":464,"w":408,"h":68,"opacity":1,"bgType":"window","fontSize":26,"frameVisible":true,"displayName":"Number Input","visible":true,"windowskin":"Window","dynamicWidth":true},{"key":"eventItem","targetClass":"Window_EventItem","hookType":"placement","x":4,"y":4,"w":1272,"h":200,"opacity":1,"bgType":"window","fontSize":26,"frameVisible":true,"displayName":"Event Item Select","visible":true,"windowskin":"Window"},{"key":"nameInput","targetClass":"Window_NameEdit","hookType":"sceneRect","x":340,"y":62,"w":600,"h":168,"opacity":1,"bgType":"window","fontSize":26,"frameVisible":true,"displayName":"Name Edit","visible":true,"windowskin":"Window"},{"key":"nameTable","targetClass":"Window_NameInput","hookType":"sceneRect","x":340,"y":238,"w":600,"h":420,"opacity":1,"bgType":"window","fontSize":26,"frameVisible":true,"displayName":"Name Input","visible":true,"windowskin":"Window"}],"ws_composerSelections":{},"ws_customWindows":[],"ws_sceneTransitions":{},"ws_categorySkins":"{\"other\":\"Window_WSB_titleCmd\",\"status\":\"Window_WSB_menu\",\"battle\":\"Window_WSB_battle\",\"talk\":\"Window_WSB_message\"}"},
+    pluginParams: {"ws_windowElements":[{"key":"titleCmd","targetClass":"Window_TitleCommand","hookType":"sceneRect","x":1017,"y":420,"w":256,"h":157,"opacity":1,"bgType":"window","fontSize":26,"frameVisible":true,"displayName":"Title Command","visible":true,"windowskin":"Window_WSB_titleCmd","bgPartId":"user:ua_ms7xv6db_1","framePartId":"user:ua_msfssllf_1","roundBgCorners":false,"confirmEffect":{"type":"cursorGlow"},"opacityGradient":{"h":[{"p":0,"a":0.6},{"p":0.513,"a":1},{"p":1,"a":0.6}]},"itemBackground":{"v":true,"t":{"h":"#202020","a":0},"b":{"h":"#7afffd","a":0.39}}},{"key":"menu","targetClass":"Window_MenuCommand","hookType":"sceneRect","x":8,"y":212,"w":228,"h":335,"opacity":1,"bgType":"window","fontSize":26,"frameVisible":true,"displayName":"Menu Command","visible":true,"windowskin":"Window_WSB_menu","bgPartId":"user:ua_ms7xv6db_1","framePartId":"user:ua_msfssllf_1","roundBgCorners":false,"confirmEffect":{"type":"ripple","amp":20},"opacityGradient":{"h":[{"p":0,"a":0.46},{"p":0.458,"a":1},{"p":1,"a":0.46}]},"itemBackground":{"v":true,"t":{"h":"#202020","a":0},"b":{"h":"#8bebfe","a":0.19}}},{"key":"status","targetClass":"Window_MenuStatus","hookType":"sceneRect","x":409,"y":222,"w":510,"h":294,"opacity":0.9803921568627451,"bgType":"window","fontSize":26,"frameVisible":true,"displayName":"Menu Status","visible":true,"windowskin":"Window_WSB_status","bgPartId":"user:ua_ms7xv6db_1","framePartId":"user:ua_msfssllf_1","roundBgCorners":false,"confirmEffect":{"type":"cursorGlow"},"opacityGradient":{"h":[{"p":0,"a":0.46},{"p":0.464,"a":1},{"p":1,"a":0.46}]},"itemBackground":{"v":true,"t":{"h":"#ffb3b3","a":0.72},"b":{"h":"#a9fef4","a":0.65}}},{"key":"gold","targetClass":"Window_Gold","hookType":"sceneRect","x":8,"y":650,"w":223,"h":57,"opacity":1,"bgType":"window","fontSize":26,"frameVisible":true,"displayName":"Gold Window","visible":true,"windowskin":"Window_WSB_gold","bgPartId":"000","framePartId":"user:ua_msfssllf_1","roundBgCorners":false,"opacityGradient":{"h":[{"p":0,"a":0.46},{"p":0.464,"a":1},{"p":1,"a":0.46}]}},{"key":"options","targetClass":"Window_Options","hookType":"sceneRect","x":440,"y":194,"w":400,"h":332,"opacity":1,"bgType":"window","fontSize":26,"frameVisible":true,"displayName":"Options","visible":true,"windowskin":"Window_WSB_options","bgPartId":"user:ua_ms7xv6db_1","framePartId":"000","itemBackground":{"v":false,"t":{"h":"#202020","a":0.5},"b":{"h":"#000000","a":0.5}}},{"key":"itemCat","targetClass":"Window_ItemCategory","hookType":"sceneRect","x":0,"y":154,"w":1272,"h":68,"opacity":1,"bgType":"window","fontSize":26,"frameVisible":true,"displayName":"Item Category","visible":true,"windowskin":"Window_WSB_itemCat","bgPartId":"user:ua_ms7xv6db_1","framePartId":"000","itemBackground":{"v":true,"t":{"h":"#202020","a":0},"b":{"h":"#9aedfe","a":0.78}}},{"key":"save","targetClass":"Window_SavefileList","hookType":"sceneRect","x":4,"y":100,"w":1272,"h":616,"opacity":1,"bgType":"window","fontSize":26,"frameVisible":true,"displayName":"Savefile List","visible":true,"windowskin":"Window_WSB_save","framePartId":"000"},{"key":"itemList","targetClass":"Window_ItemList","hookType":"sceneRect","x":4,"y":224,"w":1272,"h":496,"opacity":1,"bgType":"window","fontSize":26,"frameVisible":true,"displayName":"Item List","visible":true,"windowskin":"Window_WSB_itemList","bgPartId":"user:ua_ms7xv6db_1","framePartId":"000","itemBackground":{"v":true,"t":{"h":"#202020","a":0},"b":{"h":"#b3f2ff","a":0.71}}},{"key":"skillType","targetClass":"Window_SkillType","hookType":"sceneRect","x":1036,"y":154,"w":240,"h":156,"opacity":1,"bgType":"window","fontSize":26,"frameVisible":true,"displayName":"Skill Type","visible":true,"windowskin":"Window_WSB_skillType","bgPartId":"user:ua_ms7xv6db_1","framePartId":"000","itemBackground":{"v":true,"t":{"h":"#202020","a":0},"b":{"h":"#a3fdff","a":0.56}}},{"key":"skillStatus","targetClass":"Window_SkillStatus","hookType":"sceneRect","x":4,"y":151,"w":1032,"h":156,"opacity":1,"bgType":"window","fontSize":26,"frameVisible":true,"displayName":"Skill Status","visible":true,"windowskin":"Window_WSB_skillStatus","bgPartId":"user:ua_ms7xv6db_1","framePartId":"000","itemBackground":{"v":true,"t":{"h":"#202020","a":0},"b":{"h":"#a3fdff","a":0.56}}},{"key":"skillList","targetClass":"Window_SkillList","hookType":"sceneRect","x":4,"y":312,"w":1272,"h":408,"opacity":1,"bgType":"window","fontSize":26,"frameVisible":true,"displayName":"Skill List","visible":true,"windowskin":"Window_WSB_skillList","bgPartId":"user:ua_ms7xv6db_1","framePartId":"000","itemBackground":{"v":true,"t":{"h":"#202020","a":0},"b":{"h":"#a3fdff","a":0.56}}},{"key":"equipCmd","targetClass":"Window_EquipCommand","hookType":"sceneRect","x":316,"y":156,"w":960,"h":68,"opacity":1,"bgType":"window","fontSize":26,"frameVisible":true,"displayName":"Equip Command","visible":true,"windowskin":"Window_WSB_equipCmd","bgPartId":"user:ua_ms7xv6db_1","framePartId":"000","itemBackground":{"v":true,"t":{"h":"#202020","a":0},"b":{"h":"#94edff","a":0.61}}},{"key":"equipSlot","targetClass":"Window_EquipSlot","hookType":"sceneRect","x":316,"y":230,"w":956,"h":149,"opacity":1,"bgType":"window","fontSize":26,"frameVisible":true,"displayName":"Equip Slot","visible":true,"windowskin":"Window_WSB_equipSlot","bgPartId":"user:ua_ms7xv6db_1","framePartId":"000","opacityGradient":{"h":[{"p":0,"a":1},{"p":0.01,"a":1}]},"itemBackground":{"v":true,"t":{"h":"#202020","a":0},"b":{"h":"#a3fff9","a":0.8}}},{"key":"equipItem","targetClass":"Window_EquipItem","hookType":"sceneRect","x":316,"y":230,"w":960,"h":496,"opacity":1,"bgType":"window","fontSize":26,"frameVisible":true,"displayName":"Equip Item List","visible":true,"windowskin":"Window_WSB_equipItem","bgPartId":"user:ua_ms7xv6db_1","framePartId":"000"},{"key":"equipStatus","targetClass":"Window_EquipStatus","hookType":"sceneRect","x":4,"y":151,"w":312,"h":564,"opacity":1,"bgType":"window","fontSize":26,"frameVisible":true,"displayName":"Equip Status","visible":true,"windowskin":"Window_WSB_equipStatus","bgPartId":"user:ua_ms7xv6db_1","framePartId":"000"},{"key":"statusDetail","targetClass":"Window_Status","hookType":"sceneRect","x":4,"y":105,"w":1272,"h":324,"opacity":1,"bgType":"window","fontSize":26,"frameVisible":true,"displayName":"Status Detail","visible":true,"windowskin":"Window_WSB_statusDetail","bgPartId":"user:ua_ms7xv6db_1","framePartId":"000"},{"key":"statusParams","targetClass":"Window_StatusParams","hookType":"sceneRect","x":8,"y":429,"w":300,"h":240,"opacity":1,"bgType":"window","fontSize":26,"frameVisible":true,"displayName":"Status Params","visible":true,"windowskin":"Window_WSB_statusParams","bgPartId":"user:ua_ms7xv6db_1","framePartId":"000"},{"key":"statusEquip","targetClass":"Window_StatusEquip","hookType":"sceneRect","x":304,"y":429,"w":972,"h":240,"opacity":1,"bgType":"window","fontSize":26,"frameVisible":true,"displayName":"Status Equipment","visible":true,"windowskin":"Window_WSB_statusEquip","bgPartId":"user:ua_ms7xv6db_1","framePartId":"000"},{"key":"gameEnd","targetClass":"Window_GameEnd","hookType":"sceneRect","x":414,"y":319,"w":430,"h":96,"opacity":1,"bgType":"window","fontSize":26,"frameVisible":true,"displayName":"Game End Command","visible":true,"windowskin":"Window_WSB_gameEnd","framePartId":"000"},{"key":"shopCmd","targetClass":"Window_ShopCommand","hookType":"sceneRect","x":4,"y":56,"w":1032,"h":68,"opacity":1,"bgType":"window","fontSize":26,"frameVisible":true,"displayName":"Shop Command","visible":true,"windowskin":"Window"},{"key":"shopBuy","targetClass":"Window_ShopBuy","hookType":"sceneRect","x":4,"y":124,"w":920,"h":496,"opacity":1,"bgType":"window","fontSize":26,"frameVisible":true,"displayName":"Shop Buy","visible":true,"windowskin":"Window"},{"key":"shopSell","targetClass":"Window_ShopSell","hookType":"sceneRect","x":4,"y":192,"w":1272,"h":428,"opacity":1,"bgType":"window","fontSize":26,"frameVisible":true,"displayName":"Shop Sell","visible":true,"windowskin":"Window"},{"key":"shopNumber","targetClass":"Window_ShopNumber","hookType":"sceneRect","x":4,"y":124,"w":920,"h":496,"opacity":1,"bgType":"window","fontSize":26,"frameVisible":true,"displayName":"Shop Number","visible":true,"windowskin":"Window"},{"key":"shopStatus","targetClass":"Window_ShopStatus","hookType":"sceneRect","x":924,"y":124,"w":352,"h":496,"opacity":1,"bgType":"window","fontSize":26,"frameVisible":true,"displayName":"Shop Status","visible":true,"windowskin":"Window"},{"key":"shopDummy","targetClass":"Window_Base","hookType":"sceneRect","x":4,"y":124,"w":1272,"h":496,"opacity":1,"bgType":"window","fontSize":26,"frameVisible":true,"displayName":"Shop Dummy","visible":true,"windowskin":"Window"},{"key":"shopGold","targetClass":"Window_Gold","hookType":"sceneRect","x":1036,"y":56,"w":240,"h":68,"opacity":1,"bgType":"window","fontSize":26,"frameVisible":true,"displayName":"Shop Gold","visible":true,"windowskin":"Window"},{"key":"battle","targetClass":"Window_BattleStatus","hookType":"sceneRect","x":0,"y":504,"w":537,"h":200,"opacity":1,"bgType":"window","fontSize":26,"frameVisible":true,"displayName":"Battle Status","visible":true,"windowskin":"Window_WSB_battle","bgPartId":"000","framePartId":"000","roundBgCorners":false,"confirmEffect":{"type":"cursorGlow","dur":21},"backLayer":{"image":"Transition test"},"sceneAnim":{"in":{"move":{"direction":"outer","distance":"screen_1_4","tween":"easeOutBack"},"delay":{"order":"none","timing":"normal"},"speed":"normal"}}},{"key":"partyCmd","targetClass":"Window_PartyCommand","hookType":"sceneRect","x":414,"y":320,"w":452,"h":200,"opacity":1,"bgType":"window","fontSize":26,"frameVisible":true,"displayName":"Party Command","visible":true,"windowskin":"Window_WSB_partyCmd","bgPartId":"user:ua_ms7xv6db_1","framePartId":"000","roundBgCorners":false,"animation":{"idle":{"type":"bob","amp":2}},"confirmEffect":{"type":"cursorGlow","dur":21}},{"key":"actorCmd","targetClass":"Window_ActorCommand","hookType":"sceneRect","x":0,"y":444,"w":240,"h":271,"opacity":1,"bgType":"window","fontSize":26,"frameVisible":true,"displayName":"Actor Command","visible":true,"windowskin":"Window_WSB_actorCmd","bgPartId":"user:ua_ms7xv6db_1","framePartId":"000","roundBgCorners":false,"itemBackground":{"v":true,"t":{"h":"#202020","a":0},"b":{"h":"#9aeafe","a":0.63}}},{"key":"enemySel","targetClass":"Window_BattleEnemy","hookType":"sceneRect","x":1020,"y":383.5,"w":260,"h":89,"opacity":1,"bgType":"window","fontSize":26,"frameVisible":true,"displayName":"Battle Enemy","visible":false,"windowskin":"Window_WSB_enemySel","bgPartId":"user:ua_ms7xv6db_1","framePartId":"000","roundBgCorners":false,"itemBackground":{"v":true,"t":{"h":"#202020","a":0},"b":{"h":"#94f3ff","a":0.5}}},{"key":"skillSel","targetClass":"Window_BattleSkill","hookType":"sceneRect","x":4,"y":520,"w":1272,"h":200,"opacity":1,"bgType":"window","fontSize":26,"frameVisible":true,"displayName":"Battle Skill","visible":false,"windowskin":"Window_WSB_skillSel","bgPartId":"user:ua_ms7xv6db_1","framePartId":"000","scrollBgEnabled":true,"scrollBgSpeedX":1,"scrollBgSpeedY":1,"roundBgCorners":false,"itemBackground":{"v":true,"t":{"h":"#202020","a":0},"b":{"h":"#9efffd","a":0.56}}},{"key":"itemSel","targetClass":"Window_BattleItem","hookType":"sceneRect","x":4,"y":516,"w":1272,"h":200,"opacity":1,"bgType":"window","fontSize":26,"frameVisible":true,"displayName":"Battle Item","visible":false,"windowskin":"Window_WSB_itemSel","bgPartId":"user:ua_ms7xv6db_1","framePartId":"000","scrollBgEnabled":true,"scrollBgSpeedX":1,"scrollBgSpeedY":1,"roundBgCorners":false,"itemBackground":{"v":true,"t":{"h":"#202020","a":0},"b":{"h":"#b4fef9","a":0.63}}},{"key":"helpWin","targetClass":"Window_Help","hookType":"sceneRect","x":8,"y":4,"w":1268,"h":104,"opacity":1,"bgType":"window","fontSize":26,"frameVisible":true,"displayName":"Help Window","visible":true,"windowskin":"Window_WSB_helpWin","bgPartId":"user:ua_ms7xv6db_1","framePartId":"000","scrollBgEnabled":true,"scrollBgSpeedX":-0.3,"scrollBgSpeedY":-0.3,"roundBgCorners":false,"opacityGradient":{"h":[{"p":0.428,"a":1},{"p":1,"a":0}]},"itemBackground":{"v":true,"t":{"h":"#202020","a":0},"b":{"h":"#9efffd","a":0.56}}},{"key":"message","targetClass":"Window_Message","hookType":"sceneRect","x":4,"y":532,"w":1272,"h":162,"opacity":0.9803921568627451,"bgType":"window","fontSize":26,"frameVisible":true,"displayName":"Message Window","visible":true,"windowskin":"Window_WSB_message","bgPartId":"user:ua_ms7xv6db_1","framePartId":"user:ua_msfssllf_1","messageLineCount":4,"scrollBgEnabled":true,"scrollBgSpeedX":1,"scrollBgSpeedY":1,"roundBgCorners":false,"opacityGradient":{"h":[{"p":0,"a":0.4},{"p":0.55,"a":1},{"p":1,"a":0.4}]},"sceneAnim":{"in":{"move":{"direction":"bottom","distance":"screen_1_4","tween":"linear"},"delay":{"order":"none","timing":"normal"},"speed":"fast"},"out":{"move":{"direction":"bottom","distance":"screen_1_8","tween":"easeOutBack"},"delay":{"order":"none","timing":"normal"},"speed":"slow"}}},{"key":"nameBox","targetClass":"Window_NameBox","hookType":"placement","x":4,"y":466,"w":240,"h":60,"opacity":1,"bgType":"window","fontSize":26,"frameVisible":true,"displayName":"Name Box","visible":true,"windowskin":"Window_WSB_nameBox","bgPartId":"user:ua_ms7xv6db_1","framePartId":"user:ua_msfssllf_1","dynamicWidth":true,"scrollBgEnabled":true,"scrollBgSpeedX":-0.3,"scrollBgSpeedY":-0.3,"opacityGradient":{"h":[{"p":0,"a":0.7},{"p":0.562,"a":1},{"p":1,"a":0.7}]}},{"key":"choice","targetClass":"Window_ChoiceList","hookType":"placement","x":1088,"y":408,"w":192,"h":112,"opacity":1,"bgType":"window","fontSize":26,"frameVisible":true,"displayName":"Choice List","visible":true,"windowskin":"Window_WSB_choice","bgPartId":"user:ua_ms7xv6db_1","framePartId":"user:ua_msfssllf_1","dynamicHeight":true,"dynamicWidth":true,"scrollBgEnabled":true,"scrollBgSpeedX":1,"scrollBgSpeedY":1,"opacityGradient":{"h":[{"p":0,"a":0.7},{"p":0.53,"a":1},{"p":1,"a":0.7}]},"itemBackground":{"v":true,"t":{"h":"#202020","a":0},"b":{"h":"#8afffd","a":0.47}}},{"key":"numberInput","targetClass":"Window_NumberInput","hookType":"placement","x":436,"y":464,"w":408,"h":68,"opacity":1,"bgType":"window","fontSize":26,"frameVisible":true,"displayName":"Number Input","visible":true,"windowskin":"Window","dynamicWidth":true},{"key":"eventItem","targetClass":"Window_EventItem","hookType":"placement","x":4,"y":4,"w":1272,"h":200,"opacity":1,"bgType":"window","fontSize":26,"frameVisible":true,"displayName":"Event Item Select","visible":true,"windowskin":"Window"},{"key":"nameInput","targetClass":"Window_NameEdit","hookType":"sceneRect","x":340,"y":62,"w":600,"h":168,"opacity":1,"bgType":"window","fontSize":26,"frameVisible":true,"displayName":"Name Edit","visible":true,"windowskin":"Window"},{"key":"nameTable","targetClass":"Window_NameInput","hookType":"sceneRect","x":340,"y":238,"w":600,"h":420,"opacity":1,"bgType":"window","fontSize":26,"frameVisible":true,"displayName":"Name Input","visible":true,"windowskin":"Window"}],"ws_composerSelections":{},"ws_customWindows":[],"ws_sceneTransitions":{},"ws_categorySkins":"{\"other\":\"Window_WSB_titleCmd\",\"status\":\"Window_WSB_menu\",\"battle\":\"Window_WSB_battle\",\"talk\":\"Window_WSB_message\"}"},
   };
 
 })();
