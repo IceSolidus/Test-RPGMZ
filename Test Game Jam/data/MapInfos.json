@@ -41,8 +41,8 @@ null,
 {"id":39,"expanded":true,"name":"Donjon de l'anxiété","order":36,"parentId":42,"scrollX":1140,"scrollY":2726,"quick":true},
 {"id":40,"expanded":false,"name":"Ecole de danse","order":12,"parentId":7,"scrollX":759.5,"scrollY":626.5,"quick":false},
 {"id":41,"expanded":false,"name":"Maison 1","order":5,"parentId":4,"scrollX":0,"scrollY":0,"quick":false},
-{"id":42,"expanded":true,"name":"Manoir (anxiété)","order":33,"parentId":37,"scrollX":1234,"scrollY":663,"quick":false},
-{"id":43,"expanded":true,"name":"Manoir étage (anxiété)","order":34,"parentId":42,"scrollX":1132,"scrollY":2602,"quick":false},
-{"id":44,"expanded":false,"name":"Manoir étage 2 (anxiété)","order":35,"parentId":43,"scrollX":1200,"scrollY":2432,"quick":false},
-{"id":45,"expanded":false,"name":"Boss du silence","order":37,"parentId":42,"scrollX":1131,"scrollY":777,"quick":false}
+{"id":42,"expanded":true,"name":"Manoir (anxiété)","order":33,"parentId":37,"scrollX":1131,"scrollY":946,"quick":false},
+{"id":43,"expanded":true,"name":"Manoir étage (anxiété)","order":34,"parentId":42,"scrollX":1131,"scrollY":2243,"quick":false},
+{"id":44,"expanded":false,"name":"Manoir étage 2 (anxiété)","order":35,"parentId":43,"scrollX":1188,"scrollY":2438,"quick":false},
+{"id":45,"expanded":false,"name":"Boss du silence","order":37,"parentId":42,"scrollX":1088,"scrollY":778,"quick":false}
 ]
