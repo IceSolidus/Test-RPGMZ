@@ -48,6 +48,7 @@ null,
 {"id":46,"expanded":true,"name":"Forêt profonde","order":48,"parentId":0,"scrollX":795.5,"scrollY":1031.5,"quick":false},
 {"id":47,"expanded":true,"name":"Maisons caché","order":49,"parentId":46,"scrollX":1327.5,"scrollY":1423.5,"quick":false},
 {"id":48,"expanded":false,"name":"Maison abandonnée","order":50,"parentId":47,"scrollX":795.5,"scrollY":626.5,"quick":false},
-{"id":49,"expanded":true,"name":"Forêt profonde","order":14,"parentId":7,"scrollX":795.5,"scrollY":1178.5,"quick":false},
-{"id":50,"expanded":false,"name":"Écurie","order":15,"parentId":7,"scrollX":795.5,"scrollY":626.5,"quick":false}
+{"id":49,"expanded":true,"name":"Forêt profonde","order":14,"parentId":7,"scrollX":803.5,"scrollY":1178.5,"quick":false},
+null,
+{"id":51,"expanded":false,"name":"Écurie","order":15,"parentId":7,"scrollX":795.5,"scrollY":626.5,"quick":false}
 ]
