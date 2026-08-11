@@ -45,8 +45,11 @@ null,
 {"id":43,"expanded":true,"name":"Manoir étage (anxiété)","order":35,"parentId":42,"scrollX":1242.5454545454545,"scrollY":2057.4545454545455,"quick":false},
 {"id":44,"expanded":false,"name":"Manoir étage 2 (anxiété)","order":36,"parentId":43,"scrollX":1189,"scrollY":2439,"quick":false},
 {"id":45,"expanded":false,"name":"Boss du silence","order":38,"parentId":42,"scrollX":1233.8181818181818,"scrollY":714.5454545454546,"quick":false},
-{"id":46,"expanded":false,"name":"Écurie","order":14,"parentId":7,"scrollX":795.5,"scrollY":626.5,"quick":false},
+null,
 {"id":47,"expanded":true,"name":"Maisons caché","order":48,"parentId":49,"scrollX":1637.4545454545455,"scrollY":1605.818181818182,"quick":false},
 {"id":48,"expanded":false,"name":"Maison abandonnée","order":49,"parentId":47,"scrollX":1233.8181818181818,"scrollY":714.5454545454546,"quick":false},
-{"id":49,"expanded":true,"name":"Forêt profonde","order":47,"parentId":0,"scrollX":1233.8181818181818,"scrollY":723.2727272727273,"quick":false}
+{"id":49,"expanded":true,"name":"Forêt profonde","order":47,"parentId":0,"scrollX":1233.8181818181818,"scrollY":723.2727272727273,"quick":false},
+null,
+null,
+{"id":52,"expanded":false,"name":"Écurie","order":14,"parentId":7,"scrollX":795.5,"scrollY":626.5,"quick":false}
 ]
