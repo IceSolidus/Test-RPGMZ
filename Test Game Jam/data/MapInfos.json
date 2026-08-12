@@ -52,6 +52,6 @@ null,
 {"id":50,"expanded":false,"name":"Forêt perdu","order":48,"parentId":34,"scrollX":1892,"scrollY":2016,"quick":false},
 {"id":51,"expanded":true,"name":"donjon de la manipulation","order":43,"parentId":32,"scrollX":2125,"scrollY":1817,"quick":false},
 {"id":52,"expanded":false,"name":"Écurie","order":14,"parentId":7,"scrollX":1233.8181818181818,"scrollY":723.2727272727273,"quick":false},
-{"id":53,"expanded":true,"name":"2ème étage","order":44,"parentId":51,"scrollX":2774,"scrollY":2372,"quick":false},
-{"id":54,"expanded":false,"name":"3ème étage","order":45,"parentId":51,"scrollX":2709,"scrollY":2705,"quick":false}
+{"id":53,"expanded":true,"name":"2ème étage","order":44,"parentId":51,"scrollX":2709,"scrollY":1421,"quick":false},
+{"id":54,"expanded":false,"name":"3ème étage","order":45,"parentId":51,"scrollX":2638,"scrollY":2600,"quick":false}
 ]
