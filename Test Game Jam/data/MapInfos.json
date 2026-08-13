@@ -57,10 +57,10 @@ null,
 {"id":55,"expanded":false,"name":"3ème étage","order":45,"parentId":51,"scrollX":2414,"scrollY":2555,"quick":false},
 {"id":56,"expanded":false,"name":"Salle du boss","order":47,"parentId":51,"scrollX":2400,"scrollY":2685,"quick":false},
 {"id":57,"expanded":false,"name":"Entrée forêt","order":51,"parentId":50,"scrollX":1131,"scrollY":735,"quick":false},
-{"id":58,"expanded":true,"name":"Forêt perdue 1","order":52,"parentId":50,"scrollX":1040,"scrollY":1530,"quick":false},
+{"id":58,"expanded":true,"name":"Forêt perdue 1","order":52,"parentId":50,"scrollX":1131,"scrollY":663,"quick":false},
 {"id":59,"expanded":false,"name":"Forêt perdue 2","order":53,"parentId":50,"scrollX":1056,"scrollY":1776,"quick":false},
-{"id":60,"expanded":false,"name":"Forêt perdue 3","order":54,"parentId":50,"scrollX":1040,"scrollY":1738,"quick":false},
-{"id":61,"expanded":false,"name":"Forêt perdue 4","order":55,"parentId":50,"scrollX":1131,"scrollY":1404,"quick":false},
-{"id":62,"expanded":true,"name":"Forêt perdue 5 (énigme)","order":56,"parentId":50,"scrollX":1131,"scrollY":664,"quick":false},
-{"id":63,"expanded":false,"name":"Maison de la violence","order":57,"parentId":62,"scrollX":1136,"scrollY":1257,"quick":false}
+{"id":60,"expanded":false,"name":"Forêt perdue 3","order":54,"parentId":50,"scrollX":1131,"scrollY":1737,"quick":false},
+{"id":61,"expanded":false,"name":"Forêt perdue 4","order":55,"parentId":50,"scrollX":1131,"scrollY":787,"quick":false},
+{"id":62,"expanded":true,"name":"Forêt perdue 5 (énigme)","order":56,"parentId":50,"scrollX":1131,"scrollY":663,"quick":false},
+{"id":63,"expanded":false,"name":"Maison de la violence","order":57,"parentId":62,"scrollX":1132,"scrollY":1048,"quick":false}
 ]
