@@ -1,9 +1,9 @@
 [
 null,
-{"id":1,"expanded":true,"name":"MAP001","order":1,"parentId":0,"scrollX":1131,"scrollY":655},
-{"id":2,"expanded":true,"name":"Ville 2","order":16,"parentId":0,"scrollX":2549,"scrollY":1518,"quick":false},
+{"id":1,"expanded":true,"name":"MAP001","order":1,"parentId":0,"scrollX":691.6,"scrollY":501.2},
+{"id":2,"expanded":true,"name":"Ville 2","order":16,"parentId":0,"scrollX":1827.6,"scrollY":1608.4,"quick":false},
 {"id":3,"expanded":false,"name":"Maison 2","order":25,"parentId":11,"scrollX":1131,"scrollY":655,"quick":false},
-{"id":4,"expanded":false,"name":"Plage","order":2,"parentId":0,"scrollX":1146.8,"scrollY":1352.4,"quick":true},
+{"id":4,"expanded":false,"name":"Plage","order":2,"parentId":0,"scrollX":691.6,"scrollY":726,"quick":true},
 {"id":5,"expanded":false,"name":"Route plage","order":4,"parentId":4,"scrollX":795.5,"scrollY":626.5,"quick":true},
 {"id":6,"expanded":false,"name":"MAP005","order":6,"parentId":0,"scrollX":811,"scrollY":475,"quick":false},
 {"id":7,"expanded":false,"name":"Ville","order":7,"parentId":0,"scrollX":1171,"scrollY":1584,"quick":true},
