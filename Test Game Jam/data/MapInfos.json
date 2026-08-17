@@ -67,7 +67,7 @@ null,
 {"id":65,"expanded":false,"name":"Mini boss","order":60,"parentId":63,"scrollX":1132.4,"scrollY":1205.2,"quick":false},
 {"id":66,"expanded":false,"name":"Boss de la violence","order":62,"parentId":64,"scrollX":1131,"scrollY":663,"quick":false},
 {"id":67,"expanded":false,"name":"Maison fermière","order":16,"parentId":7,"scrollX":691.6,"scrollY":501.2,"quick":false},
-{"id":68,"expanded":true,"name":"Lac final (inverted)","order":65,"parentId":36,"scrollX":4913,"scrollY":4720,"quick":false},
+{"id":68,"expanded":true,"name":"Lac final (inverted)","order":65,"parentId":36,"scrollX":3493,"scrollY":6169,"quick":false},
 {"id":69,"expanded":true,"name":"Rivière profonde","order":66,"parentId":68,"scrollX":1131,"scrollY":2397,"quick":false},
 {"id":70,"expanded":false,"name":"Rivière de la vie","order":67,"parentId":69,"scrollX":1139,"scrollY":824,"quick":false},
 {"id":71,"expanded":false,"name":"Cuisine","order":17,"parentId":7,"scrollX":691.6,"scrollY":501.2,"quick":false}
