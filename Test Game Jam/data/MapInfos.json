@@ -69,6 +69,6 @@ null,
 {"id":67,"expanded":false,"name":"Maison fermière","order":16,"parentId":7,"scrollX":691.6,"scrollY":501.2,"quick":false},
 {"id":68,"expanded":true,"name":"Lac final (inverted)","order":65,"parentId":36,"scrollX":3872,"scrollY":6190,"quick":false},
 {"id":69,"expanded":true,"name":"Rivière profonde","order":66,"parentId":68,"scrollX":1131,"scrollY":2397,"quick":false},
-{"id":70,"expanded":false,"name":"Rivière de la vie","order":67,"parentId":69,"scrollX":1131,"scrollY":663,"quick":false},
+{"id":70,"expanded":false,"name":"Rivière de la vie","order":67,"parentId":69,"scrollX":1130.8,"scrollY":662.8,"quick":false},
 {"id":71,"expanded":false,"name":"Cuisine","order":17,"parentId":7,"scrollX":691.6,"scrollY":501.2,"quick":false}
 ]
